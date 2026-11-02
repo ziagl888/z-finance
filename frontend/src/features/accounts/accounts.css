@@ -1,0 +1,43 @@
+/* Accounts: layout only; surfaces, tables, fields and buttons come from src/ui. */
+
+.accounts-first-run {
+  border-color: var(--gold-soft);
+}
+
+.accounts-archived td {
+  color: var(--ink-soft);
+}
+
+.accounts-child {
+  padding-left: 1.75rem !important;
+}
+
+.accounts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: calc(var(--space) * 1.5);
+}
+
+.accounts-form h3,
+.accounts-form p {
+  margin: 0;
+}
+
+.accounts-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Settings page: total reserve field with its save button on one line */
+.accounts-reserve {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6rem;
+}
+
+.accounts-reserve .ui-field {
+  width: 16rem;
+}

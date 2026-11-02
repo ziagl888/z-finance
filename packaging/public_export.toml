@@ -1,0 +1,74 @@
+# Which tracked files go into the public repository (read by tools/public_export.py).
+#
+# The working repository stays private. A public release is a fresh repository that receives only
+# the product: the files listed under `include`, minus every file matched by `exclude`. Exclude
+# always wins. When in doubt, exclude: a wrong exclusion costs nothing, a wrong inclusion leaks.
+#
+# Pattern forms: `dir/` is everything below that directory, anything else is a glob over the
+# repository-relative path with `/` separators in which `*` also crosses directories.
+
+[export]
+
+include = [
+    # product code and its tests
+    "backend/",
+    "frontend/",
+    "agent/",
+    "packaging/",
+    "tools/",
+    "tests/",
+    # documentation for users and contributors
+    "README.md",
+    "ARCHITECTURE.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "docs/manual/",
+    "docs/decisions/",
+    # the results of the clean-machine install tests, without machine names (docs/qa/ stays private)
+    "docs/install-test.md",
+    # screenshots of the synthetic demo data set (tools/demo_data.py), linked by README and manual
+    "docs/assets/",
+    # CI and project configuration
+    ".github/",
+    "pyproject.toml",
+    "uv.lock",
+    "justfile",
+    ".pre-commit-config.yaml",
+    ".editorconfig",
+    ".gitignore",
+    ".gitattributes",
+    "bandit.yaml",
+    ".env.example",
+]
+
+exclude = [
+    # requirement documents: they name the owner and describe a private financial situation
+    "SPEC-z-finance.md",
+    "docs/UC-*",
+    "docs/specs/",
+    "docs/handoff/",
+    # QA protocols: machine names and the person who ran them
+    "docs/qa/",
+    # the identifying privacy patterns of the export guard; named on its own so that it stays out
+    # even if docs/qa/ is ever narrowed
+    "docs/qa/private_patterns.toml",
+    # local agent state, runtime data, backups and browser-run leftovers
+    ".claude/",
+    "*CLAUDE.md",
+    "data/",
+    "backups/",
+    "*.bak",
+    "*.db",
+    "*.sqlite",
+    "*.sqlite3",
+    ".playwright-mcp/",
+    # build output and installed dependencies
+    "*/node_modules/*",
+    "frontend/dist/",
+    "dist/",
+    "build/",
+    # local settings with real values (.env.example stays: its secrets are empty)
+    ".env",
+    ".env.local",
+]

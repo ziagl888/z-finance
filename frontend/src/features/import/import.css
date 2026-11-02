@@ -1,0 +1,147 @@
+/* Import assistant: layout only; surfaces, fields, buttons and tables come from src/ui. */
+
+.import {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+/* Step indicator */
+.import-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink-soft);
+}
+
+.import-steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.import-steps li[aria-current="step"] {
+  color: var(--ink);
+}
+
+.import-step-number {
+  display: inline-grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.import-steps li[aria-current="step"] .import-step-number {
+  color: var(--on-ink);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.import-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+.import-grid {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.import-amounts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space);
+}
+
+.import-amounts .import-grid {
+  align-self: stretch;
+}
+
+/* First rows of the file: the role of a mapped column sits under its name */
+.import-role {
+  display: block;
+  width: fit-content;
+  margin-top: 0.3rem;
+}
+
+.import-scroll {
+  overflow-x: auto;
+}
+
+/* The sticky header of a table is meant for the page scroll; inside a scroll box it would float over the rows. */
+.import-scroll .ui-table thead th {
+  position: static;
+}
+
+.import-refusal {
+  margin: 0;
+  padding: 0.5rem 0.7rem;
+  border-left: 3px solid var(--alert);
+}
+
+/* Six figures in one row on a desktop screen */
+.import-preview .ui-kpis {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+/* Preview table */
+.import-hide {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.import-table td {
+  vertical-align: top;
+}
+
+.import-text {
+  min-width: 14rem;
+}
+
+.import-category,
+.import-match {
+  min-width: 15rem;
+}
+
+.import-category select,
+.import-match select {
+  width: 100%;
+}
+
+.import-category > *,
+.import-match > * {
+  margin-bottom: 0.3rem;
+}
+
+.import-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.import-flag {
+  margin-left: 0.4rem;
+}
+
+/* Duplicates and left-out lines read as inactive without losing contrast */
+.import-row-out td {
+  color: var(--ink-soft);
+  background: var(--neutral-bg);
+}
+
+.import-commit {
+  position: sticky;
+  bottom: 0;
+  padding: 0.7rem 0;
+  background: var(--ivory);
+}

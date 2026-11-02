@@ -1,0 +1,50 @@
+/* First-run wizard: layout only; surfaces, fields, buttons and the table come from src/ui. */
+
+.first-run {
+  max-width: 62rem;
+}
+
+.first-run-lead {
+  max-width: 44rem;
+  color: var(--ink-soft);
+}
+
+/* Step list: the four steps of the wizard, the reached ones marked. */
+.first-run-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+  margin: 0 0 var(--space);
+  padding: 0;
+  list-style: none;
+  counter-reset: first-run-step;
+}
+
+.first-run-steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* --ink-faint would read at 2.8:1 here; the step names are text and need AA (4.5:1). */
+  color: var(--ink-soft);
+  counter-increment: first-run-step;
+}
+
+.first-run-steps li::before {
+  content: counter(first-run-step);
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid currentcolor;
+  border-radius: 50%;
+  font-variant-numeric: tabular-nums;
+}
+
+.first-run-steps li.is-reached {
+  color: var(--ink);
+}
+
+.first-run-steps li[aria-current="step"] {
+  color: var(--ink);
+  font-weight: 600;
+}

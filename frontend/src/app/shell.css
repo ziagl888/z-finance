@@ -1,0 +1,168 @@
+/* App shell: fixed sidebar left, sticky header, wide content. Desktop-first (1280–1920 px). */
+
+.shell {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.shell-sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: 100vh;
+  padding: 1.25rem 0.9rem 1rem;
+  overflow-y: auto;
+  background: var(--glass-bg-strong);
+  border-right: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(32px) saturate(140%);
+}
+
+.shell-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.shell-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: linear-gradient(140deg, var(--gold-deep), var(--gold-soft));
+  border-radius: var(--radius-sm);
+  box-shadow: 0 6px 16px rgb(142 136 116 / 30%);
+}
+
+.shell-brand-name {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.shell-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.shell-nav-title {
+  padding: 0 0.75rem 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.shell-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shell-nav a {
+  display: block;
+  padding: 0.45rem 0.75rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s;
+}
+
+.shell-nav a:hover {
+  background: var(--row-hover);
+}
+
+.shell-nav a.active {
+  font-weight: 600;
+  background: var(--card);
+  box-shadow:
+    inset 3px 0 0 var(--gold),
+    var(--shadow-soft);
+}
+
+.shell-footer {
+  margin-top: auto;
+  padding: 0.5rem 0.75rem 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--hairline);
+}
+
+/* Header + content */
+.shell-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.shell-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+  height: 3.75rem;
+  padding: 0 2.25rem;
+  /* No backdrop-filter here: it would make the header the containing block of the fixed help
+     panel (HelpButton renders it inside the header) and clip it to the header's height. */
+  background: var(--glass-bg-strong);
+  border-bottom: 1px solid var(--hairline);
+}
+
+.shell-crumb {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.shell-crumb-group {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shell-lang {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.shell-lang select {
+  min-height: 2.1rem;
+  padding-block: 0.2rem;
+  border-radius: 999px;
+}
+
+.shell-lang-error {
+  max-width: 24rem;
+  font-size: 0.8rem;
+}
+
+.shell-main {
+  --sticky-top: 3.75rem;
+
+  width: 100%;
+  max-width: var(--content-max);
+  padding: 1.75rem 2.25rem 3rem;
+}

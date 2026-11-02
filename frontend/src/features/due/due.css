@@ -1,0 +1,84 @@
+/* Due items: layout and the row emphasis only; controls, table and badges come from base.css and
+   src/ui. */
+
+.due-intro {
+  margin-top: 0;
+}
+
+.due-alert {
+  margin: 0 0 var(--space);
+  padding: 0.6rem 0.9rem;
+  font-weight: 600;
+  color: var(--alert-ink);
+  background: var(--alert-bg);
+  border: 1px solid var(--alert);
+  border-radius: var(--radius-sm);
+}
+
+.due-notice {
+  margin: 0 0 var(--space);
+}
+
+.due-table {
+  margin-bottom: calc(var(--space) * 1.5);
+}
+
+/* Rows are focusable (Enter confirms): outline instead of the box-shadow ring, which a row does
+   not draw. */
+.due-row:focus-visible {
+  box-shadow: none;
+  outline: 2px solid var(--gold-deep);
+  outline-offset: -2px;
+}
+
+/* More than 30 days overdue: an edge marker and bold words next to the text marker, so the
+   highlight does not rely on colour alone. */
+.due-row-late td:first-child {
+  box-shadow: inset 3px 0 0 var(--alert);
+}
+
+.due-late {
+  display: block;
+  color: var(--alert-ink);
+}
+
+.due-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.due-amount {
+  width: 100%;
+  min-width: 7rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.due-table .due-negative {
+  color: var(--alert-ink);
+}
+
+.due-table input[type="date"] {
+  width: 100%;
+}
+
+.due-postpone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.due-actions {
+  white-space: nowrap;
+  text-align: right !important;
+}
+
+.due-actions button + button {
+  margin-left: 0.25rem;
+}
+
+.due-error {
+  margin: 0;
+}

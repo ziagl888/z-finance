@@ -1,0 +1,119 @@
+# Release (SPEC "Distribution", UC NF10): a `v*` tag builds the Windows installer and attaches it
+# to the GitHub release, so the page a lay user opens always offers the newest one.
+#
+# The build job needs no secret: it uses the token GitHub hands to the workflow. `workflow_dispatch`
+# builds the installer without a tag and leaves it as a workflow artifact — useful to try a build
+# before tagging.
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  windows-installer:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    permissions:
+      # Attaching the installer to the release is the only write this workflow does.
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+          # The ancestor check below needs the history and `origin/main`: with depth 0 the checkout
+          # fetches every branch, so no later `git fetch` (which would need a credential) is made.
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v10.1.0
+        with:
+          python-version: "3.13"
+          enable-cache: true
+
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      # Untrusted text (the tag name) reaches the shell only through `env:`, never through a
+      # `${{ }}` inside a script. The tag must be a plain version, match pyproject.toml (the source
+      # of the program's own version, so the update check never loops on "newer"), and sit on main.
+      # The checkout keeps no credential, so this step never talks to the remote: `origin/main`
+      # comes from the checkout, and a git call that wants a password fails at once, not prompts.
+      - name: Version from the tag
+        id: version
+        shell: pwsh
+        env:
+          REF_TYPE: ${{ github.ref_type }}
+          REF_NAME: ${{ github.ref_name }}
+          COMMIT_SHA: ${{ github.sha }}
+          GIT_TERMINAL_PROMPT: "0"
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ($env:REF_TYPE -ne 'tag') {
+            "version=0.0.0" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+            exit 0
+          }
+          if ($env:REF_NAME -notmatch '^v([0-9]+\.[0-9]+\.[0-9]+)(-[0-9A-Za-z.]+)?$') {
+            throw "Tag is not a version (vMAJOR.MINOR.PATCH[-suffix])."
+          }
+          $version = $env:REF_NAME.Substring(1)
+          $declared = (uv version --short).Trim()
+          if ($Matches[1] -ne $declared) {
+            throw "Tag version $($Matches[1]) differs from pyproject.toml version $declared; bump pyproject first."
+          }
+          git rev-parse --verify --quiet refs/remotes/origin/main
+          if ($LASTEXITCODE -ne 0) { throw "origin/main is not in the checkout." }
+          git merge-base --is-ancestor $env:COMMIT_SHA origin/main
+          if ($LASTEXITCODE -ne 0) { throw "Tagged commit is not on main." }
+          "version=$version" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
+      # The SPA bundle is git-ignored and built on demand; without it the program has no interface.
+      - name: Build the web interface
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+
+      - name: Install the packaging toolchain
+        run: uv sync --group packaging
+
+      - name: Install Inno Setup
+        run: choco install innosetup --no-progress --yes
+
+      # Fails on its own when the bundle is larger than 300 MB or the cold start slower than 10 s.
+      - name: Build and measure the installer
+        shell: pwsh
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: uv run python packaging/build_installer.py --version "$env:VERSION"
+
+      - uses: actions/upload-artifact@v5.0.0
+        with:
+          name: z-finance-setup-${{ steps.version.outputs.version }}
+          path: packaging/build/z-finance-setup-*.exe
+          if-no-files-found: error
+
+      - name: Attach the installer to the release
+        if: startsWith(github.ref, 'refs/tags/v')
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          $tag = $env:GITHUB_REF_NAME
+          # A tag with a suffix (-rc.1, -beta.2) is a pre-release: never "latest", never offered by
+          # /releases/latest to the update check.
+          $flags = @()
+          if ($tag.Contains('-')) { $flags += '--prerelease' }
+          gh release view $tag 2>$null
+          if ($LASTEXITCODE -ne 0) { gh release create $tag --title $tag --generate-notes --verify-tag @flags }
+          gh release upload $tag (Get-ChildItem packaging/build/z-finance-setup-*.exe).FullName --clobber

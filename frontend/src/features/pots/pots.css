@@ -1,0 +1,218 @@
+/* Savings pots: layout, plus the progress bar and the drag markers of this screen (tokens only).
+   Cards, fields, buttons, tables, badges and amounts come from src/ui and styles/base.css. */
+
+.pots-intro {
+  margin-top: 0;
+}
+
+.pots-toolbar {
+  margin-bottom: var(--space);
+}
+
+.pot-dialog h2,
+.pot-account > h2 {
+  margin-top: 0;
+}
+
+.pot-form,
+.pot-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.pot-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+/* One block per account: KPI row, emergency order, cards */
+.pot-account .ui-kpis {
+  margin-top: var(--space);
+}
+
+.pot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+  gap: var(--space);
+  align-items: start;
+}
+
+.pot-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.pot-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.pot-card-head h3 {
+  margin: 0;
+}
+
+.pot-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.pot-balance {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.pot-line {
+  margin: 0;
+}
+
+.pot-rank:empty {
+  display: none;
+}
+
+.pot-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.pot-history {
+  margin-top: 0.4rem;
+}
+
+/* Progress: a bar next to its number, never the only carrier of the figure */
+.pot-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pot-bar {
+  flex: 1;
+  height: 0.7rem;
+  appearance: none;
+  overflow: hidden;
+  background: var(--neutral-bg);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.pot-bar::-webkit-progress-bar {
+  background: transparent;
+}
+
+.pot-bar::-webkit-progress-value {
+  background: var(--gold-deep);
+  border-radius: 999px;
+}
+
+.pot-bar::-moz-progress-bar {
+  background: var(--gold-deep);
+  border-radius: 999px;
+}
+
+.pot-bar[data-status="behind"]::-webkit-progress-value {
+  background: var(--alert);
+}
+
+.pot-bar[data-status="behind"]::-moz-progress-bar {
+  background: var(--alert);
+}
+
+.pot-bar[data-status="reached"]::-webkit-progress-value,
+.pot-bar[data-status="on_track"]::-webkit-progress-value {
+  background: var(--ok);
+}
+
+.pot-bar[data-status="reached"]::-moz-progress-bar,
+.pot-bar[data-status="on_track"]::-moz-progress-bar {
+  background: var(--ok);
+}
+
+.pot-progress-text {
+  min-width: 3.2rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Emergency order list: one row per pot, draggable */
+.pot-order {
+  margin: var(--space) 0;
+}
+
+.pot-order h3 {
+  margin-bottom: 0.2rem;
+}
+
+.pot-order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 44rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pot-order-item {
+  display: grid;
+  grid-template-columns: 2rem 1.5rem 1fr auto auto;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.7rem;
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  cursor: grab;
+}
+
+.pot-order-locked {
+  cursor: default;
+  background: var(--neutral-bg);
+}
+
+.pot-order-dragging {
+  opacity: 0.55;
+}
+
+.pot-order-over {
+  border-color: var(--gold-deep);
+  box-shadow: inset 0 3px 0 var(--gold);
+}
+
+.pot-order-rank {
+  font-weight: 700;
+  text-align: right;
+}
+
+.pot-order-grip {
+  color: var(--ink-soft);
+}
+
+.pot-order-buttons {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+
+/* Emergency dialog */
+.pot-emergency-table {
+  width: 100%;
+}
+
+.pot-emergency-input {
+  width: 8rem;
+}
+
+.pot-closed {
+  margin-top: var(--space);
+}

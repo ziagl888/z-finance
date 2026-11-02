@@ -1,0 +1,87 @@
+/* Payoff plan: layout only. Cards, fields, buttons, tables, badges and amounts come from src/ui and
+   styles/base.css; this file arranges the two columns, the order list and the what-if slider. */
+
+.payoff-intro {
+  margin-top: 0;
+}
+
+/* Plan form beside the available amount; stacked below 1100 px */
+.payoff-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: var(--space);
+  align-items: start;
+  margin-bottom: var(--space);
+}
+
+@media (max-width: 1100px) {
+  .payoff-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.payoff-form,
+.payoff-whatif {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.payoff-form h2,
+.payoff-whatif h2 {
+  margin: 0;
+}
+
+.payoff-whatif {
+  margin-top: calc(var(--space) * 1.25);
+}
+
+.payoff-whatif input[type="range"] {
+  width: 100%;
+}
+
+.payoff-whatif-result,
+.payoff-warning {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Own order: one row per debt — grip, name, amount, up, down */
+.payoff-order {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.payoff-order li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto auto;
+  gap: 0.6rem;
+  align-items: center;
+  cursor: grab;
+}
+
+.payoff-dragging {
+  opacity: 0.5;
+}
+
+.payoff-terms {
+  width: 100%;
+}
+
+.payoff-terms th {
+  font-weight: 400;
+  text-align: left;
+}
+
+.payoff-total th,
+.payoff-total td {
+  font-weight: 700;
+}
+
+.payoff-shortfall {
+  margin-bottom: var(--space);
+}

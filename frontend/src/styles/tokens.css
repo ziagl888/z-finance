@@ -1,0 +1,116 @@
+/*
+ * Design tokens (EDEL, after dev-front's approved mockup): warm ivory, glass cards, champagne gold
+ * as an accent. Features and components use these variables, never raw colours.
+ *
+ * Contrast rule (WCAG AA, values in docs/specs/SPEC-T-2026-CU-9130-032.md): text is --ink or
+ * --ink-soft; status text uses the *-ink variants. --gold, --ink-faint and the plain status colours
+ * are for lines, markers, fills and focus only — as text they are below 4.5:1.
+ */
+:root {
+  /* signature accent (never text) */
+  --gold: #c49d6f;
+  --gold-soft: #d8d4c5;
+  --gold-deep: #8e8874;
+  --gold-ink: #7a5c34;
+
+  /* page and surfaces */
+  --ivory: #f5f1ea;
+  --card: #fbf8f3;
+  --tint: #ece5d9;
+  --glass-bg: rgb(255 253 249 / 62%);
+  --glass-bg-strong: rgb(255 253 249 / 82%);
+  --glass-border: rgb(255 255 255 / 70%);
+  --hairline: rgb(43 39 34 / 10%);
+  --line: rgb(43 39 34 / 18%);
+  --zebra: rgb(43 39 34 / 3%);
+  --row-hover: rgb(196 157 111 / 10%);
+
+  /* text */
+  --ink: #2b2722;
+  --ink-soft: #6a6258;
+  --ink-faint: #9a9184;
+  --on-ink: #fbf8f3;
+
+  /* status: fills/markers, and the AA text variants */
+  --ok: #7a8467;
+  --ok-ink: #56613f;
+  --ok-bg: rgb(122 132 103 / 16%);
+  --warn: #c49d6f;
+  --warn-ink: #735628;
+  --warn-bg: rgb(196 157 111 / 20%);
+  --alert: #a65a43;
+  --alert-ink: #94492f;
+  --alert-bg: rgb(166 90 67 / 12%);
+  --neutral-bg: rgb(43 39 34 / 6%);
+
+  /* focus: gold ring with an ink core, visible on every surface */
+  --focus-ring: 0 0 0 2px var(--card), 0 0 0 4px var(--gold-deep);
+
+  /* shape, depth, rhythm */
+  --radius: 22px;
+  --radius-sm: 12px;
+  --radius-xs: 8px;
+  --shadow:
+    0 1px 1px rgb(43 39 34 / 4%), 0 8px 24px rgb(43 39 34 / 6%),
+    0 24px 56px rgb(43 39 34 / 8%);
+  --shadow-soft: 0 1px 2px rgb(43 39 34 / 5%), 0 6px 18px rgb(43 39 34 / 6%);
+  --space: 1rem;
+  --sidebar-width: 15.5rem;
+  --content-max: 104rem;
+  --font:
+    "Montserrat Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /*
+   * Legacy aliases from before the design system. Kept so code written against the old names
+   * still renders in the new palette; new code uses the names above.
+   */
+  --color-bg: var(--ivory);
+  --color-surface: var(--card);
+  --color-text: var(--ink);
+  --color-muted: var(--ink-soft);
+  --color-border: var(--line);
+  --color-accent: var(--gold-ink);
+  --color-error: var(--alert-ink);
+
+  color-scheme: light;
+}
+
+/* Obsidian variant for an OS dark mode: same roles, AA on the dark surfaces. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gold: #d4b184;
+    --gold-soft: #5a5244;
+    --gold-deep: #b89868;
+    --gold-ink: #dcbd91;
+    --ivory: #1c1a17;
+    --card: #26231f;
+    --tint: #312d28;
+    --glass-bg: rgb(38 35 31 / 72%);
+    --glass-bg-strong: rgb(38 35 31 / 90%);
+    --glass-border: rgb(255 255 255 / 8%);
+    --hairline: rgb(245 241 234 / 10%);
+    --line: rgb(245 241 234 / 20%);
+    --zebra: rgb(245 241 234 / 3%);
+    --row-hover: rgb(212 177 132 / 10%);
+    --ink: #f5f1ea;
+    --ink-soft: #c9bfb1;
+    --ink-faint: #8a8174;
+    --on-ink: #1c1a17;
+    --ok: #aab58f;
+    --ok-ink: #b8c39d;
+    --ok-bg: rgb(170 181 143 / 16%);
+    --warn: #d4b184;
+    --warn-ink: #dcbd91;
+    --warn-bg: rgb(212 177 132 / 16%);
+    --alert: #e0957c;
+    --alert-ink: #eba48d;
+    --alert-bg: rgb(224 149 124 / 14%);
+    --neutral-bg: rgb(245 241 234 / 8%);
+    --shadow:
+      0 1px 1px rgb(0 0 0 / 20%), 0 8px 24px rgb(0 0 0 / 25%),
+      0 24px 56px rgb(0 0 0 / 30%);
+    --shadow-soft: 0 1px 2px rgb(0 0 0 / 20%), 0 6px 18px rgb(0 0 0 / 22%);
+
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,6 @@
+# bandit configuration for the pre-commit hook (`bandit --configfile bandit.yaml`).
+# Tests assert with `assert` and use throwaway temp paths by design; ruff's S rules
+# already cover the same checks there with per-file ignores (pyproject.toml).
+exclude_dirs:
+  - tests
+  - tools/tests

@@ -1,0 +1,169 @@
+# Commit gates (UC NF8, SPEC AK19). CI runs `pre-commit run --all-files` with this file, so a
+# hook that passes locally passes there. Install once per clone:
+#   uvx pre-commit install        (installs the pre-commit and commit-msg hooks below)
+#
+# Built output is never linted. The German requirement documents are the author's source texts:
+# the fixers and formatters leave them byte-for-byte as written (anchor &requirement_docs).
+exclude: ^(backend/zfinance/web|frontend/dist)/
+default_install_hook_types: [pre-commit, commit-msg]
+# Hooks without `stages` run at pre-commit; the commit-subject hook declares commit-msg itself.
+default_stages: [pre-commit]
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+        exclude: &requirement_docs ^(SPEC-z-finance\.md|docs/UC-z-finance\.md|docs/handoff/)
+      - id: end-of-file-fixer
+        exclude: *requirement_docs
+      - id: mixed-line-ending
+        args: [--fix=lf]
+        exclude: *requirement_docs
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: check-toml
+      - id: detect-private-key
+      - id: name-tests-test
+        args: [--pytest-test-first]
+        files: ^(tests|tools/tests)/.*\.py$
+        # `_name.py` is a helper of the tests beside it (tests/e2e/_ui.py), not a test file.
+        exclude: (^|/)(__init__|conftest|_[^/]*)\.py$
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.16.8 # keep in step with ruff in uv.lock
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v2.3.1
+    hooks:
+      - id: mypy
+        # mypy refuses two modules of the same name in one run, and pytest requires every conftest
+        # to be called conftest.py: the one of the browser run (tests/e2e/) is left out. It holds
+        # fixtures around Playwright, which has no stubs here anyway.
+        exclude: ^tests/e2e/conftest\.py$
+        # mypy runs in its own environment; the runtime and test dependencies it type-checks
+        # against are listed here, pinned to the versions in uv.lock.
+        additional_dependencies:
+          - "fastapi==0.141.1"
+          - "httpx==0.28.1"
+          - "platformdirs==4.11.10"
+          - "pytest==9.1.1"
+          - "regex==2026.9.10"
+          - "types-regex==2026.9.10.20260911"
+          - "uvicorn==0.53.0"
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.21.2
+    hooks:
+      - id: pyupgrade
+        args: [--py313-plus]
+
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.9.4
+    hooks:
+      - id: bandit
+        args: [--configfile, bandit.yaml]
+
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    rev: 0.12.17
+    hooks:
+      - id: uv-lock
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+      # The hook above scans only the staged diff, so `run --all-files` scans nothing in CI.
+      # This manual-stage variant scans the whole history; CI runs it with
+      # `pre-commit run --hook-stage manual gitleaks-history` on a full clone.
+      - id: gitleaks
+        alias: gitleaks-history
+        name: gitleaks (full history)
+        entry: gitleaks git --redact --verbose
+        stages: [manual]
+
+  - repo: local
+    hooks:
+      # `language: node`: pre-commit builds its own Node environment with these packages, so the
+      # hooks work in a fresh clone before `npm ci` (frontend/eslint.config.cjs explains the
+      # config side). Needs Node.js on PATH, which the frontend build needs anyway.
+      - id: prettier
+        name: prettier
+        entry: prettier
+        args: [--write, --list-different, --ignore-unknown]
+        language: node
+        additional_dependencies: ["prettier@3.9.8"]
+        files: \.(ts|tsx|css|json|md)$
+        exclude: (^SPEC-z-finance\.md$|^docs/UC-z-finance\.md$|^docs/handoff/|(^|/)package-lock\.json$)
+      - id: eslint
+        name: eslint (typescript-eslint)
+        entry: eslint
+        args: [--config, frontend/eslint.config.cjs, --max-warnings=0]
+        language: node
+        additional_dependencies:
+          - "eslint@10.11.0"
+          - "@eslint/js@10.0.1"
+          - "typescript-eslint@8.70.0"
+          # typescript-eslint's parser supports TypeScript < 6.1; the app's own compiler
+          # (frontend/package.json) is not used by the linter.
+          - "typescript@5.9.3"
+          - "eslint-plugin-react-hooks@7.1.1"
+          - "globals@17.12.0"
+        files: ^frontend/.*\.(ts|tsx)$
+      - id: commit-subject
+        name: commit subject (conventional commits)
+        entry: python tools/check_commit_subject.py
+        language: python
+        stages: [commit-msg]
+      - id: docs-gate
+        name: docs gate (feature change -> README/ARCHITECTURE/CHANGELOG or manual chapter)
+        entry: python tools/check_docs_gate.py
+        language: python
+        # Needs every staged path, not only the feature files, to see the doc change beside it:
+        # one process for the whole list (pre-commit otherwise splits it across CPUs, and a
+        # batch holding the feature file but not its doc change fails wrongly).
+        always_run: true
+        pass_filenames: true
+        require_serial: true
+      - id: manual-coverage
+        name: manual coverage (every route has docs/manual/<lang>/<chapter>.md in every language)
+        entry: python tools/check_manual_coverage.py
+        language: python
+        # Checks the whole tree, not the staged files: nothing else in a commit can satisfy it.
+        always_run: true
+        pass_filenames: false
+  # --- i18n hooks (T-2026-CU-9130-004): the `repo: local` blocks for the .po check, en.po ban
+  # --- and catalogue freshness below this line.
+  - repo: local
+    hooks:
+      # Syntax, duplicate msgids and placeholders kept in the translation; standard library only.
+      # It only reads: the layout stays as `just i18n` (Lingui, Babel) wrote it. A German word
+      # equal to the English one ("Backup", "Name") is a real translation and passes.
+      - id: check-po
+        name: .po/.pot syntax, duplicates and placeholders (tools/check_po.py)
+        entry: python tools/check_po.py
+        language: python
+        files: \.(po|pot)$
+        types_or: [text]
+  - repo: local
+    hooks:
+      - id: en-po-files
+        name: no en.po (English is the source language)
+        entry: English is written in the code; an en.po catalog must not exist
+        language: fail
+        files: ^(frontend/src/locales/en\.po|backend/zfinance/i18n/en/LC_MESSAGES/.*\.po)$
+      - id: pot-freshness
+        name: translation catalogs current and complete (tools/check_pot_freshness.py)
+        entry: python tools/check_pot_freshness.py --frontend-optional
+        language: python
+        additional_dependencies: ["babel==2.18.0"]
+        # Changed paths pick the side (frontend/backend); the check re-extracts that whole side.
+        files: ^(frontend/src/.*\.(ts|tsx|po|pot)|backend/zfinance/.*\.(py|po|pot))$
+        # One process: the frontend check rewrites and restores messages.pot around the extractor,
+        # parallel chunks would read each other's half-restored file.
+        require_serial: true

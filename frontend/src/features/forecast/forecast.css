@@ -1,0 +1,94 @@
+/* Forecast: layout only. Cards, KPI tiles, fields, buttons, tables, badges and amounts come from
+   src/ui and styles/base.css; the chart from src/components/charts. */
+
+.forecast-intro {
+  margin-top: 0;
+  max-width: 62rem;
+}
+
+.forecast-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem var(--space);
+  margin-bottom: var(--space);
+}
+
+.forecast-view {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.forecast-view label {
+  font-weight: 600;
+}
+
+/* Curve and day list on the left, emergency proposal and what-if on the right;
+   one column below 1200 px */
+.forecast-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 24rem);
+  gap: calc(var(--space) * 1.5);
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .forecast-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.forecast-main,
+.forecast-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  min-width: 0;
+}
+
+.forecast-main h2,
+.forecast-side h2 {
+  margin-top: 0;
+}
+
+/* Notes under the key figures (levy gap, overdue items) */
+.forecast-note {
+  margin: calc(var(--space) * -0.5) 0 var(--space);
+}
+
+.forecast-alert {
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  color: var(--alert-ink);
+  background: var(--alert-bg);
+  border-radius: var(--radius-sm);
+}
+
+.forecast-proposal h3 {
+  margin-bottom: 0.4rem;
+}
+
+/* What-if items: one block per item (the side column is too narrow for a table) */
+.forecast-whatif-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: var(--space) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.forecast-whatif-list > li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.forecast-whatif-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+}

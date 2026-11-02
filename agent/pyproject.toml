@@ -1,0 +1,30 @@
+[project]
+name = "z-finance-agent"
+version = "0.1.0"
+description = "Receipt agent for z-finance: fetches receipt photos by IMAP, reads them with claude -p, books them through the local API."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28",
+    "pydantic>=2.12",
+]
+
+[project.scripts]
+zfinance-agent = "zfinance_agent.run:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "zfinance_agent"
+module-root = ""
+
+[tool.ruff]
+extend = "../pyproject.toml"
+
+[tool.ruff.lint.per-file-ignores]
+# assert is the pytest idiom; the fakes stand in for IMAP, SMTP and the claude CLI and need no prose
+# beyond their names (the root config excuses tests from the docstring rules, D1, the same way).
+"tests/**" = ["S101", "S105", "S106", "D1"]

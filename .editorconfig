@@ -1,0 +1,37 @@
+# install the editorconfig plugin for your editor: http://editorconfig.org/#download
+
+# Stop EditorConfig walking up out of the repo: without this it keeps climbing
+# past the checkout and inherits whatever sits in the parent directory, which
+# differs per machine.
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.{py,sql}]
+indent_size = 4
+
+[*.py]
+max_line_length = 120
+quote_type = double
+
+[justfile]
+indent_size = 4
+
+[*.md]
+# Trailing double spaces are a Markdown line break.
+trim_trailing_whitespace = false
+
+# Generated output: leave alone
+[{backend/zfinance/web/**,frontend/dist/**,**/node_modules/**}]
+charset = unset
+end_of_line = unset
+indent_size = unset
+indent_style = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset

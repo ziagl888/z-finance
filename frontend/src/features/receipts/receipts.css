@@ -1,0 +1,72 @@
+/* Receipts: layout of the review cards (photo + correction form), the tables and the settings
+   form. Cards, fields, buttons and tables come from base.css and src/ui. */
+
+.rcp-intro {
+  margin-top: 0;
+}
+
+.rcp h2 {
+  margin-top: calc(var(--space) * 1.5);
+}
+
+.rcp-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  margin-bottom: var(--space);
+}
+
+.rcp-list > .rcp-card {
+  margin-bottom: 0;
+}
+
+.rcp-card {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: calc(var(--space) * 1.25);
+}
+
+.rcp-card h3 {
+  margin: 0 0 0.25rem;
+}
+
+.rcp-photo img {
+  display: block;
+  width: 100%;
+  max-height: 16rem;
+  object-fit: contain;
+  background: var(--card);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+}
+
+.rcp-body {
+  min-width: 0;
+}
+
+.rcp-read {
+  margin: 0 0 0.75rem;
+  color: var(--ink-soft);
+  overflow-wrap: anywhere;
+}
+
+.rcp-form,
+.rcp-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.rcp-settings {
+  margin-top: calc(var(--space) * 1.5);
+}
+
+.rcp-settings h2 {
+  margin: 0;
+}
+
+.rcp-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}

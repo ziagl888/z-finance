@@ -1,0 +1,85 @@
+/* Dashboard: layout only. Cards, tiles, tables, badges and amounts come from src/ui and
+   styles/base.css, the curve from src/components/charts. */
+
+.dashboard > h1 {
+  margin-top: 0;
+}
+
+/* The three figures of the weekly routine stay on one row down to 1024 px, so they are readable
+   without scrolling (UC NF5). */
+.dashboard-kpis {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dashboard-hints {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: calc(var(--space) * 1.25);
+}
+
+.dashboard-alert {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  color: var(--alert-ink);
+  background: var(--alert-bg);
+  border-radius: var(--radius-sm);
+}
+
+/* Not an alert: something is missing, nothing is wrong (UC-ZF-008 1a). */
+.dashboard-note {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  color: var(--warn-ink);
+  background: var(--warn-bg);
+  border-radius: var(--radius-sm);
+}
+
+/* Cards in two columns; the second column holds the short ones. */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: calc(var(--space) * 1.5);
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.dashboard-column {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space) * 1.5);
+}
+
+.dashboard-column > section > h2 {
+  margin-top: 0;
+}
+
+.dashboard-badge {
+  margin-left: 0.5rem;
+}
+
+.dashboard-month-category {
+  padding-left: 1.4rem;
+}
+
+.dashboard-count {
+  margin: 0.2rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.dashboard-curve {
+  margin-top: calc(var(--space) * 1.5);
+}
+
+.dashboard-curve .ui-actions,
+.dashboard-grid .ui-actions {
+  margin-bottom: 0;
+}

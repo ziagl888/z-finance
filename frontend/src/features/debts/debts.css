@@ -1,0 +1,84 @@
+/* Debts: layout only. Cards, fields, buttons, tables, badges and amounts come from src/ui and
+   styles/base.css; this file arranges the form, the overview table and the detail card. */
+
+.debt-intro {
+  margin-top: 0;
+}
+
+.debt-form,
+.debt-pay {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.debt-head h2 {
+  margin: 0;
+}
+
+.debt-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.debt-figures {
+  margin: 0;
+}
+
+/* Payoff budget: the field and its save button on one line, aligned at the bottom */
+.debt-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.debt-table {
+  width: 100%;
+  margin-bottom: calc(var(--space) * 1.5);
+}
+
+.debt-total th,
+.debt-total td {
+  font-weight: 700;
+}
+
+.debt-row-selected {
+  background: var(--row-hover);
+}
+
+.debt-row-selected td:first-child {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.debt-row-done td {
+  color: var(--ink-soft);
+}
+
+/* The creditor button looks like the cell text; the row carries the pointer */
+.debt-link {
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.debt-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.debt-row-actions {
+  white-space: nowrap;
+  text-align: right !important;
+}
+
+.debt-row-actions button + button {
+  margin-left: 0.25rem;
+}

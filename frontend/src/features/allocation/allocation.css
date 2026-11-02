@@ -1,0 +1,92 @@
+/* Allocation: layout only. Cards, fields, buttons, tables, badges and amounts come from src/ui and
+   styles/base.css; this file arranges the proposal list, its lines and the target rows of a rule. */
+
+.allocation-intro {
+  margin-top: 0;
+}
+
+/* One proposal below the other, each with its own head, lines and actions */
+.allocation-proposals {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.allocation-proposal + .allocation-proposal {
+  border-top: 1px solid var(--line);
+  padding-top: var(--space);
+}
+
+.allocation-proposal-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 0.6rem;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+}
+
+.allocation-proposal-title {
+  font-weight: 600;
+}
+
+/* The lines of a proposal: target and amount, the amount column as wide as an input needs */
+.allocation-lines {
+  max-width: 34rem;
+}
+
+.allocation-lines th[scope="col"]:last-child,
+.allocation-lines td:last-child {
+  width: 12rem;
+}
+
+.allocation-amount {
+  width: 8rem;
+}
+
+.allocation-remaining th,
+.allocation-remaining td {
+  font-weight: 700;
+}
+
+.allocation-warning {
+  margin: 0.4rem 0 0;
+  font-weight: 600;
+}
+
+/* Rule editor: one row per share — kind, pot, percentage, remove */
+.allocation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: var(--space);
+}
+
+.allocation-form h2,
+.allocation-form h3 {
+  margin: 0;
+}
+
+.allocation-targets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.allocation-targets li {
+  display: grid;
+  grid-template-columns: minmax(0, 12rem) minmax(0, 14rem) 6rem auto auto;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .allocation-targets li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

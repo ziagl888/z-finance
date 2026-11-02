@@ -1,0 +1,4235 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-19 01:52+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: @lingui/cli\n"
+
+#: src/features/allocation/ProposalList.tsx
+msgid "(stays on the account)"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid ""
+"A levy rate is set but no pot is marked as your levy pot, so no levy share "
+"is proposed. Mark one under <0>Taxes & levies</0>."
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid ""
+"A new amount applies from the next open due date; quarters you have already "
+"confirmed keep their amount. Back-payments after an assessment notice go in "
+"as expected items on the <0>Recurring items</0> page."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "A pot"
+msgstr ""
+
+#: src/api/client.ts
+msgid "API request failed with status {status}"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/entry/TransactionList.tsx
+#: src/features/forecast/DayItems.tsx src/features/forecast/WhatIfForm.tsx
+#: src/features/import/FileStep.tsx src/features/import/RunsList.tsx
+#: src/features/month/Drilldown.tsx src/features/month/UncategorizedList.tsx
+#: src/features/pots/EmergencyDialog.tsx src/features/pots/PotForm.tsx
+#: src/features/receipts/ReceiptsPage.tsx src/features/receipts/ReviewCard.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Account"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Account balance"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Account balances"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Account balances by area"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Account does not accept this date"
+msgstr ""
+
+#: src/features/accounts/AccountsPage.tsx src/features/accounts/route.tsx
+msgid "Accounts"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/accounts/FirstRunPanel.tsx
+#: src/features/allocation/AllocationPage.tsx src/features/debts/DebtList.tsx
+#: src/features/due/DuePage.tsx src/features/entry/TransactionList.tsx
+#: src/features/first-run/FirstRunWizard.tsx
+#: src/features/levy/ReserveSection.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/ItemsPanel.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Actions"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Add as expected item"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Add at least one target the income should go to."
+msgstr ""
+
+#: src/features/accounts/FirstRunPanel.tsx
+msgid "Add category"
+msgstr ""
+
+#: src/features/settings-tax/DueDatesField.tsx
+msgid "Add due date"
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Add expected item"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Add money"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Add money to {name}"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Add share"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Add to forecast"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Add {name} as an expected item"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid "Added as an expected item. It is now part of your saved plan."
+msgstr ""
+
+#: src/features/accounts/FirstRunPanel.tsx
+msgid "Adopt categories"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Agent runs"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Agent was unsure"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "All"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx src/features/forecast/ForecastPage.tsx
+msgid "All accounts"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Allocate"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Allocated {booked}."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/allocation/route.tsx
+msgid "Allocation"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Already repaid"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx src/features/debts/DebtDetail.tsx
+#: src/features/due/DuePage.tsx src/features/entry/TransactionList.tsx
+#: src/features/forecast/DayItems.tsx src/features/import/PreviewStep.tsx
+#: src/features/import/ProfileStep.tsx src/features/month/Drilldown.tsx
+#: src/features/month/UncategorizedList.tsx src/features/pots/PotCard.tsx
+#: src/features/pots/PotDialogs.tsx src/features/receipts/ReceiptsPage.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/ItemsPanel.tsx
+#: src/features/recurring/RecurringList.tsx
+#: src/features/settings-tax/TaxPage.tsx
+msgid "Amount"
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+#: src/features/forecast/ForecastChart.tsx
+#: src/features/forecast/WhatIfForm.tsx src/features/levy/ChartsSection.tsx
+msgid "Amount (EUR)"
+msgstr ""
+
+#: src/features/due/DueRow.tsx src/features/entry/EntryForm.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Amount (€)"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Amount column"
+msgstr ""
+
+#. placeholder {0}: line.target || t`the total reserve`
+#: src/features/allocation/ProposalList.tsx
+msgid "Amount for {0}"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Amount needed"
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Amount per due date"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Amount per month (EUR)"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Amount to take from {name}"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "An expected item needs a date after today."
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "Analyse"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Applies to"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid ""
+"Applies to the expense chart. The income chart always shows the business."
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "Apply rules to uncategorised bookings"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Archive"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Archived"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/accounts/FirstRunPanel.tsx src/features/debts/DebtForm.tsx
+#: src/features/debts/DebtList.tsx src/features/first-run/FirstRunWizard.tsx
+#: src/features/month/MonthPage.tsx src/features/pots/PotForm.tsx
+msgid "Area"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Area of the expense chart"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "As of"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Assessment received"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Assign"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Assign an expense to {name}"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx src/features/pots/PotDialogs.tsx
+msgid "Assign expense"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid ""
+"Assign the columns of the file. A profile belongs to one bank and is reused "
+"for its next statements; a new or changed profile is saved when you show the"
+" preview."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Assigned"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "At most {MAX_WHAT_IF_ITEMS} what-if items at a time."
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid ""
+"At the end of this day: balance {balance}, available after levies "
+"{available}."
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+#: src/features/receipts/ReceiptSettingsSection.tsx
+msgid "Automatic"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Automatic (pot flagged as levy pot)"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Available"
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+#: src/features/forecast/ForecastChart.tsx
+msgid "Available after levies"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Available in an emergency"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Available per month"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Average"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Average income of the last 3 months"
+msgstr ""
+
+#: src/features/month/ReportTable.tsx
+msgid "Average of last 6 months"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+#: src/features/import/ProfileStep.tsx
+msgid "Back"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Back to the profile"
+msgstr ""
+
+#: src/app/pages.tsx
+msgid "Back to the start page"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Back up now"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Back-payment account"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Back-payment due on"
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "Backend not reachable"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx src/features/backup/route.tsx
+msgid "Backup"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Backup file"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Backup saved to {path}"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/dashboard/MiniCurve.tsx src/features/dashboard/MonthCard.tsx
+#: src/features/forecast/ForecastChart.tsx src/features/month/MonthPage.tsx
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Balance"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Balance minus all pots"
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid "Balance of your payment accounts"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Balance today"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Balance today: {balance}"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Bank name"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Behind plan"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Behind plan: needs {rate} a month from now on."
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Below required revenue"
+msgstr ""
+
+#: src/features/forecast/ForecastChart.tsx
+msgid "Below the reserve"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid ""
+"Below your reserve from {breachDate}: the lowest point is {shortfall} short "
+"of it."
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Biggest cost block"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Block"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Book"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "Book special payment"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/forecast/DayItems.tsx src/features/receipts/ReceiptsPage.tsx
+msgid "Booked"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Booked income"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Booked receipts"
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid "Booked “{name}”."
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Booked: {merchant}."
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "Booking"
+msgstr ""
+
+#: src/features/due/DuePage.tsx src/features/due/DueRow.tsx
+msgid "Booking date"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Booking deleted"
+msgstr ""
+
+#: src/features/month/Drilldown.tsx
+msgid "Bookings of the category"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/accounts/FirstRunPanel.tsx
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Both areas"
+msgstr ""
+
+#: src/features/accounts/labels.ts src/features/dashboard/SideCards.tsx
+#: src/features/levy/ChartsSection.tsx
+msgid "Business"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx src/features/forecast/ForecastPage.tsx
+msgid "Business accounts"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/levy/SettingsForm.tsx
+msgid "Business income"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid ""
+"Business income per month: booked (solid) and planned (light). The line is "
+"the revenue you need each month; months below it are marked."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Business income so far"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Business profit"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Business profit so far"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "By the rules"
+msgstr ""
+
+#: src/features/import/FileStep.tsx
+msgid "CSV file"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/allocation/RuleForm.tsx src/features/debts/DebtForm.tsx
+#: src/features/due/DueRow.tsx src/features/entry/EntryForm.tsx
+#: src/features/pots/EmergencyDialog.tsx src/features/pots/PotDialogs.tsx
+#: src/features/pots/PotForm.tsx src/features/recurring/ItemsPanel.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Cancel"
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "Capture"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Card payments, business"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Card payments, private"
+msgstr ""
+
+#: src/features/accounts/labels.ts
+msgid "Cash"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Cash payments, business"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Cash payments, private"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Categories"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Categories to start with"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "Categorise the rest in the month report"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/entry/TransactionList.tsx
+#: src/features/import/PreviewStep.tsx src/features/month/ReportTable.tsx
+#: src/features/month/RulesSection.tsx
+#: src/features/month/UncategorizedList.tsx
+#: src/features/receipts/ReviewCard.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Category"
+msgstr ""
+
+#: src/features/month/UncategorizedList.tsx
+msgid "Category for {rowLabel}"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Category of line {n}"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "Change of this day"
+msgstr ""
+
+#: src/features/payoff/WhatIf.tsx
+msgid "Change per month: {change}"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Changed by you"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Charts"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Check now"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Check receipts"
+msgstr ""
+
+#: src/features/receipts/ReceiptSettingsSection.tsx
+msgid "Check receipts read with less than (%)"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Check the match"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid ""
+"Choose a back-payment account in the settings so the expected back-payment "
+"appears in your forecast."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "Choose a category."
+msgstr ""
+
+#: src/features/month/UncategorizedList.tsx
+msgid "Choose a category…"
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Choose a date after today. Enter earlier ones as bookings."
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Choose a day of the month between 1 and 31."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Choose a different target account for the transfer."
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Choose a start date."
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Choose an account (a transfer needs two different ones)."
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Choose an account and a category."
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "Choose an account to pay from."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/forecast/WhatIfForm.tsx
+msgid "Choose an account."
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Choose an account…"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Choose the account the instalments are paid from."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Choose the account the money comes from."
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Choose the account the payments are made from."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Choose the account the pot is on."
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Choose the account."
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Choose the category they move to."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Choose the expense the pot pays for."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Choose the first due date."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Choose the pot that gets the money."
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/entry/EntryForm.tsx src/features/import/FileStep.tsx
+#: src/features/import/ProfileStep.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Choose…"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid ""
+"Click a point of the curve, or focus the chart, choose a day with the arrow "
+"keys and press Enter, to see what happens on that day."
+msgstr ""
+
+#: src/features/month/Drilldown.tsx src/features/month/RuleDialog.tsx
+#: src/features/pots/PotCard.tsx src/help/HelpButton.tsx
+msgid "Close"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Close the pot {name}? Its rest returns to the free balance."
+msgstr ""
+
+#. placeholder {0}: closed.length
+#: src/features/pots/PotsPage.tsx
+msgid "Closed pots ({0})"
+msgstr ""
+
+#: src/features/import/FileStep.tsx
+msgid "Column separator"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Comma ( , )"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Comma, e.g. 1.234,56"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "Confirm"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "Confirm and book"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Confirm that you want to take money from the locked pot."
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Confirm withdrawal"
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "Connecting…"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Continue"
+msgstr ""
+
+#: src/features/import/FileStep.tsx
+msgid "Continue to the profile"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Contract end (information)"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid ""
+"Costs (fixed costs, instalments, payoff budget, pot rates, reserve build-up)"
+" divided by 1 minus your levy rate of {rate} %."
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Counterparty"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Counterparty (filled in where empty)"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Counterparty (optional)"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Counterparty column"
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid "Cover the shortfall from your pots"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid "Create a business account first: <0>Accounts</0>."
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx
+msgid "Create a payment account first: <0>Accounts</0>."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Create account"
+msgstr ""
+
+#: src/features/entry/EntryPage.tsx src/features/import/FileStep.tsx
+#: src/features/pots/PotsPage.tsx src/features/recurring/RecurringPage.tsx
+msgid "Create an account first: <0>Accounts</0>."
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Create category"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Created"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Credit"
+msgstr ""
+
+#: src/features/accounts/labels.ts
+msgid "Credit card"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Credit column (money in)"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/debts/DebtList.tsx
+#: src/features/payoff/PayoffPage.tsx
+msgid "Creditor"
+msgstr ""
+
+#: src/features/accounts/labels.ts
+msgid "Current account"
+msgstr ""
+
+#: src/features/dashboard/DashboardPage.tsx src/features/dashboard/route.tsx
+msgid "Dashboard"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/debts/DebtDetail.tsx src/features/entry/EntryForm.tsx
+#: src/features/entry/TransactionList.tsx src/features/forecast/WhatIfForm.tsx
+#: src/features/import/PreviewStep.tsx src/features/import/ProfileStep.tsx
+#: src/features/month/Drilldown.tsx src/features/month/UncategorizedList.tsx
+#: src/features/pots/PotCard.tsx src/features/receipts/ReceiptsPage.tsx
+#: src/features/receipts/ReviewCard.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/ItemsPanel.tsx
+msgid "Date"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Date column"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Date format"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Date, total or merchant missing"
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+#: src/features/forecast/ForecastChart.tsx src/features/levy/SettingsForm.tsx
+#: src/features/settings-tax/DueDatesField.tsx
+msgid "Day"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Day %d, month %m, year %Y or %y; e.g. %d.%m.%Y"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Day of the month"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Debit"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Debit and credit columns"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Debit column (money out)"
+msgstr ""
+
+#. placeholder {0}: line.target
+#: src/features/allocation/ProposalList.tsx
+msgid "Debt \"{0}\""
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Debt payoff"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Debt payoff plan"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Debt-free"
+msgstr ""
+
+#: src/features/payoff/WhatIf.tsx
+msgid "Debt-free: {now}"
+msgstr ""
+
+#: src/features/payoff/WhatIf.tsx
+msgid "Debt-free: {then} instead of {now}"
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx src/features/debts/route.tsx
+msgid "Debts"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid ""
+"Decide once where your income goes, and confirm with one click when it "
+"arrives. The share for your levies is set aside the moment the income is "
+"booked, so it never shows up as free money."
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Decimal separator"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/allocation/AllocationPage.tsx src/features/debts/DebtList.tsx
+#: src/features/entry/TransactionList.tsx src/features/month/RulesSection.tsx
+#: src/features/pots/PotCard.tsx src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Delete"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "Delete rule {pattern}"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Delete the account {name}?"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Delete the category {name}?"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid ""
+"Delete the pot {name} with its history? Its money returns to the free "
+"balance."
+msgstr ""
+
+#: src/features/entry/EntryPage.tsx
+msgid "Delete this booking?"
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx
+msgid ""
+"Delete this debt? Its planned instalments are removed; booked payments stay."
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Delete this expected item?"
+msgstr ""
+
+#: src/features/recurring/RecurringPage.tsx
+msgid ""
+"Delete this recurring item? Its planned items are removed; booked ones stay "
+"as bookings."
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Delete this rule? Bookings it categorised keep their category."
+msgstr ""
+
+#: src/features/entry/EntryPage.tsx
+msgid "Delete this transfer? Both of its bookings are removed."
+msgstr ""
+
+#. placeholder {0}: rule.name
+#: src/features/allocation/AllocationPage.tsx
+msgid "Delete {0}"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Delete {removingName}"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Detect automatically"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Difference"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Discard"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Discard this receipt and its photo?"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Download"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Due"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid "Due date"
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Due dates"
+msgstr ""
+
+#: src/features/dashboard/DueCard.tsx
+msgid "Due in the next 14 days"
+msgstr ""
+
+#: src/features/due/DuePage.tsx src/features/due/route.tsx
+msgid "Due items"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Duplicate"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx src/features/import/PreviewStep.tsx
+#: src/features/import/RunsList.tsx src/features/receipts/ReceiptsPage.tsx
+msgid "Duplicates"
+msgstr ""
+
+#: src/features/import/RunsList.tsx
+msgid "Earlier imports"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/allocation/AllocationPage.tsx src/features/debts/DebtList.tsx
+#: src/features/entry/TransactionList.tsx src/features/pots/PotCard.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Edit"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Edit account"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Edit category"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Edit debt {editingName}"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Edit pot {title}"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Edit rule"
+msgstr ""
+
+#. placeholder {0}: rule.name
+#: src/features/allocation/AllocationPage.tsx
+msgid "Edit {0}"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Editing a booking — Esc cancels."
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Editing “{editingName}”"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Emergency"
+msgstr ""
+
+#: src/features/pots/OrderList.tsx
+msgid "Emergency order"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Emergency order updated."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Emergency rank"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Emergency rank {rank}"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx src/features/pots/PotsPage.tsx
+msgid "Emergency withdrawal"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Emergency withdrawal of {shown} booked."
+msgstr ""
+
+#: src/features/import/FileStep.tsx
+msgid "Encoding"
+msgstr ""
+
+#: src/features/settings-tax/DueDatesField.tsx
+msgid "End of month"
+msgstr ""
+
+#: src/features/settings-tax/DueDatesField.tsx
+msgid "End of {name}"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "End savings plan"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Ends on (optional)"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "Enter a booking date."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Enter a budget of 0 or more, e.g. 300."
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid "Enter a date and an amount other than 0."
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Enter a day from 1 to 31 and a month."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Enter a monthly amount greater than 0, e.g. 250."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Enter a name for the pot."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Enter a name for the rule."
+msgstr ""
+
+#: src/features/receipts/ReceiptSettingsSection.tsx
+msgid "Enter a percentage between 0 and 100."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Enter a rate between 0 and 90, such as 35."
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Enter a rate from 0 to 90, e.g. 35 or 35,5."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Enter a target amount greater than 0, e.g. 3000, or leave it empty."
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Enter a text."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Enter a total amount greater than 0, e.g. 5000."
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Enter an amount for at least one pot."
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Enter an amount greater than 0, e.g. 1500, or leave it empty."
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx src/features/pots/EmergencyDialog.tsx
+#: src/features/pots/PotDialogs.tsx
+msgid "Enter an amount greater than 0, e.g. 500."
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Enter an amount greater than 0, e.g. 600, or leave it empty."
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "Enter an amount greater than 0."
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx
+msgid "Enter an amount of 0 or more, e.g. 300."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Enter an amount other than 0, e.g. 12,50."
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Enter an amount other than 0."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Enter an amount such as 1234,56."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Enter an instalment greater than 0, e.g. 250."
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Enter each SVS due date only once."
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Enter each income tax due date only once."
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Enter every amount as 0 or more, e.g. 300."
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "Enter every share as an amount of 0 or more."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Enter saves · Alt+N opens this form from any page"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Enter the creditor."
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Enter the date."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Enter the income as an amount of 0 or more, or leave it empty."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Enter the income as an amount, e.g. 3000, or leave it empty."
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid ""
+"Enter the income tax prepayment and the SVS contribution once. They appear "
+"as planned items on their due dates. Small business: there is no VAT in "
+"z-finance."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Enter the interest rate as a number, e.g. 4.5."
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Enter the merchant."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Enter the minimum amount as 0 or more, e.g. 500."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Enter the opening balance as an amount, e.g. 1250.00."
+msgstr ""
+
+#: src/features/accounts/TotalReserveSetting.tsx
+msgid "Enter the reserve as a positive amount or 0."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Enter the reserve floor as a positive amount or 0."
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Enter the total as an amount greater than 0."
+msgstr ""
+
+#: src/features/month/UncategorizedList.tsx
+msgid "Every booking of this month has a category."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Every income"
+msgstr ""
+
+#: src/features/levy/LevyPage.tsx
+msgid ""
+"Every income you receive triggers income tax and SVS that are only collected"
+" next summer. See what your income has already triggered, how much of it you"
+" have set aside, and how much revenue you need each month. Your fixed tax "
+"prepayments are set up under <0>Taxes & levies</0>."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid ""
+"Every month this amount is transferred to the pot's account, starting next "
+"month and ending on the target date. The transfers appear as planned items."
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Every receipt sent in so far is booked."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Everything is set up"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Existing backups"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Expected back-payment"
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Expected item"
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Expected one-off items"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Expected to be reached on {reach}."
+msgstr ""
+
+#: src/features/accounts/labels.ts src/features/due/DueRow.tsx
+#: src/features/entry/EntryForm.tsx src/features/forecast/WhatIfForm.tsx
+#: src/features/pots/PotDialogs.tsx src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Expense"
+msgstr ""
+
+#: src/features/dashboard/MonthCard.tsx
+msgid "Expenses"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Expenses and liabilities"
+msgstr ""
+
+#: src/features/month/ReportTable.tsx
+msgid "Expenses by category"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid ""
+"Expenses per month by category, booked up to this month and planned after "
+"it. The line is what you pay towards your debts each month."
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Expenses this month"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Expenses: {selectedName}"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Export as CSV"
+msgstr ""
+
+#: src/features/import/FileStep.tsx
+msgid "Export it from your online banking."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Extra per month"
+msgstr ""
+
+#: src/features/import/ImportPage.tsx src/features/import/RunsList.tsx
+msgid "File"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Finish"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "First account"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "First day under the reserve"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "First due date"
+msgstr ""
+
+#: src/features/import/DetectedTable.tsx
+msgid "First rows of the file"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx src/features/payoff/PayoffPage.tsx
+msgid "Fixed costs"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Fixed costs and instalments exceed your income by {shortfall} a month."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Fixed instalment"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Folder: {directory}"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "For example 35 — leave empty to skip."
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx src/features/forecast/route.tsx
+msgid "Forecast"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Foreign currency"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Four short steps and you can start. You can change everything later."
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid "Free"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Free balance"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Free balance of this account"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Free on this account: {free}"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Free until the end of the month"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Free until the end of the month: {freeNow}"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx src/features/levy/FreeAmountCard.tsx
+msgid "Free until {until}"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx src/features/pots/PotDialogs.tsx
+msgid "From"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "From a rule"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx src/features/entry/EntryForm.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "From account"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "From the planned item"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "From this amount"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid ""
+"From your tax advisor: the share of your business income that income tax and"
+" SVS will claim."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Fully covered"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Gap"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Go to Accounts"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Go to Allocation"
+msgstr ""
+
+#: src/features/dashboard/DueCard.tsx
+msgid "Go to Due items"
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+msgid "Go to Forecast"
+msgstr ""
+
+#: src/features/dashboard/MonthCard.tsx
+msgid "Go to Month"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Go to Receipts"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx src/features/payoff/PayoffPage.tsx
+msgid "Goes to"
+msgstr ""
+
+#: src/help/HelpButton.tsx
+msgid "Help"
+msgstr ""
+
+#: src/help/HelpButton.tsx
+msgid "Help for this page"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Hide duplicates"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx src/features/pots/PotCard.tsx
+msgid "History"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid "Horizon"
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx
+msgid ""
+"How much you can put towards your debts each month on top of the fixed "
+"instalments."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid ""
+"How much you can put towards your debts each month, in which order, and when"
+" you are debt-free. The extra money becomes a planned special payment each "
+"month."
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "How the amount is stored"
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid "How the free amount is calculated"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid ""
+"If two rules match, the higher priority wins; at equal priority the older "
+"rule."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid ""
+"If you run a business, z-finance can set part of every payment you receive "
+"aside for income tax and social insurance. Leave the field empty if that "
+"does not apply to you — you can set it later under Levy & revenue."
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx src/features/import/route.tsx
+msgid "Import"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "Import another file"
+msgstr ""
+
+#: src/features/import/ImportPage.tsx
+msgid "Import bank statement"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "Import finished"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Import line {n}"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "Import protocol"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Imported before."
+msgstr ""
+
+#: src/features/pots/OrderList.tsx
+msgid ""
+"In an emergency rank 1 is used first. Drag a pot onto another one to change "
+"the order, or use the arrow buttons."
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "In pots"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "In shorter months the item falls on the last day of the month."
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "In the year after the income. The default is 1 July."
+msgstr ""
+
+#: src/features/accounts/labels.ts src/features/allocation/AllocationPage.tsx
+#: src/features/allocation/ProposalList.tsx
+#: src/features/dashboard/MonthCard.tsx src/features/due/DueRow.tsx
+#: src/features/entry/EntryForm.tsx src/features/forecast/WhatIfForm.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Income"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Income (your amount)"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Income against required revenue"
+msgstr ""
+
+#: src/features/dashboard/MonthCard.tsx
+msgid "Income and expenses of the running month"
+msgstr ""
+
+#: src/features/month/ReportTable.tsx
+msgid "Income by category"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Income of"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Income removed"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid "Income tax prepayment"
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Income tax prepayment (ESt-VZ)"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Income this month"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Income waiting to be allocated"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Income: {selectedName}"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/debts/DebtList.tsx
+#: src/features/payoff/PayoffPage.tsx
+msgid "Instalment"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx src/features/payoff/PayoffPage.tsx
+msgid "Instalments"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Instalments per month"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Interest"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Interest rate % (information)"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "Interval"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "Invalid pattern, skipped"
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid "Item"
+msgstr ""
+
+#: src/features/dashboard/DueCard.tsx
+msgid "Items due in the next 14 days"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "Items of a day"
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid "Items of “{name}”"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "Items on the chosen day"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "Items on {date}"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "January to today, {year}"
+msgstr ""
+
+#: src/features/levy/LevyPage.tsx
+msgid ""
+"Keep the estimate for {year} and remove its planned back-payment? Enter the "
+"real amount of the assessment as an expected item afterwards."
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "Key figures"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/accounts/FirstRunPanel.tsx
+#: src/features/first-run/FirstRunWizard.tsx
+#: src/features/recurring/ExpectedSection.tsx
+msgid "Kind"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Kind of booking"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Kind of item"
+msgstr ""
+
+#: src/app/LanguageSwitch.tsx src/features/first-run/FirstRunWizard.tsx
+#: src/features/settings/SettingsPage.tsx
+msgid "Language"
+msgstr ""
+
+#: src/features/entry/EntryPage.tsx src/features/import/DoneStep.tsx
+msgid "Latest bookings"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Leave empty to use every income."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Leave empty to use the average of the last three months."
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid "Left in the pot"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid ""
+"Left out: {skipped}. Possible duplicates found: {suspects}. Lines with "
+"errors: {errors}."
+msgstr ""
+
+#: src/components/charts/Chart.tsx
+msgid "Legend"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Levies ({levyRate} %)"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Levies not covered"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid ""
+"Levies not covered: the open levy gap is larger than the money on your "
+"accounts. <0>Levy & revenue</0> shows what is missing."
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Levies on the revenue"
+msgstr ""
+
+#: src/features/levy/LevyPage.tsx src/features/levy/route.tsx
+msgid "Levy & revenue"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Levy pot"
+msgstr ""
+
+#. placeholder {0}: line.target
+#: src/features/allocation/ProposalList.tsx
+msgid "Levy pot \"{0}\""
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Levy pot {potShare} + prepayments {prepayments}"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Levy rate (%)"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx src/features/pots/PotCard.tsx
+msgid "Levy reserve"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Levy reserve pot"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Levy reserve {year}"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Levy share"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Liabilities (instalments and special payments)"
+msgstr ""
+
+#: src/features/accounts/labels.ts
+msgid "Liability"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx src/features/import/PreviewStep.tsx
+msgid "Line"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Lines before the header"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx src/features/import/PreviewStep.tsx
+msgid "Lines with errors"
+msgstr ""
+
+#: src/features/forecast/ForecastChart.tsx
+msgid "Liquidity forecast"
+msgstr ""
+
+#: src/features/forecast/ForecastChart.tsx
+msgid ""
+"Liquidity forecast: use the left and right arrow keys to choose a day (Shift"
+" for a week) and Enter to list its items"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/backup/BackupPage.tsx src/features/dashboard/DashboardPage.tsx
+#: src/features/debts/DebtDetail.tsx src/features/debts/DebtList.tsx
+#: src/features/due/DuePage.tsx src/features/entry/TransactionList.tsx
+#: src/features/forecast/DayItems.tsx src/features/forecast/ForecastPage.tsx
+#: src/features/levy/LevyPage.tsx src/features/month/Drilldown.tsx
+#: src/features/month/MonthPage.tsx src/features/month/RulesSection.tsx
+#: src/features/month/UncategorizedList.tsx src/features/payoff/PayoffPage.tsx
+#: src/features/pots/PotCard.tsx src/features/pots/PotsPage.tsx
+#: src/features/receipts/ReceiptsPage.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/ItemsPanel.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Loading…"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid ""
+"Loads a backup archive (.zip, with receipt photos) or an export.json file "
+"into an empty z-finance. An export.json brings back the data but no receipt "
+"photos. If the database already holds data, the restore is refused; nothing "
+"is merged."
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx
+msgid ""
+"Loans, instalment purchases, private debts: see how much is still open and "
+"when it is paid off. Instalments appear as planned items."
+msgstr ""
+
+#: src/features/pots/OrderList.tsx src/features/pots/PotCard.tsx
+msgid "Locked"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Locked (never used in an emergency)"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid ""
+"Locked pots are never part of an emergency withdrawal. To use one, choose "
+"Take out on the pot; it asks for a confirmation first."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Locked: never used in an emergency."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid ""
+"Look for expenses you can cut in the <0>Month</0> view, or renegotiate "
+"instalments on the <1>Debts</1> page."
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Look for new versions"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Looks like: {resembles}"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "Lowest point"
+msgstr ""
+
+#: src/features/forecast/ForecastChart.tsx
+msgid "Lowest: {lowest}"
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "Main"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Make a rule"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Make a rule from this booking?"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Manual"
+msgstr ""
+
+#: src/help/Handbook.tsx
+msgid "Manual chapters"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx src/features/month/RulesSection.tsx
+msgid "Match"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Match a planned item"
+msgstr ""
+
+#: src/features/import/RunsList.tsx
+msgid "Matched"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "Matched to planned items"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Matches planned item"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Merchant"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx src/features/levy/SettingsForm.tsx
+#: src/features/month/MonthPage.tsx src/features/month/route.tsx
+#: src/features/payoff/PayoffPage.tsx
+#: src/features/settings-tax/DueDatesField.tsx
+msgid "Month"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Month by month"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "Monthly"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Monthly income to plan with"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Most expensive first"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx src/features/recurring/ItemsPanel.tsx
+msgid "Move"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Move and delete"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Move bookings to"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Move money"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Move money from {name}"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx src/features/pots/OrderList.tsx
+msgid "Move {name} down"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx src/features/pots/OrderList.tsx
+msgid "Move {name} up"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Moved in"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Moved out"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Movement"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "My own order"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx
+#: src/features/accounts/FirstRunPanel.tsx
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/allocation/RuleForm.tsx
+#: src/features/first-run/FirstRunWizard.tsx src/features/pots/PotForm.tsx
+msgid "Name"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Needs {rate} a month."
+msgstr ""
+
+#: src/features/import/DoneStep.tsx src/features/import/labels.ts
+#: src/features/import/PreviewStep.tsx src/features/import/RunsList.tsx
+msgid "New"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "New account"
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid "New amount (€)"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "New balance"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "New category"
+msgstr ""
+
+#: src/features/due/DueRow.tsx src/features/recurring/ItemsPanel.tsx
+msgid "New date"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "New debt"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx src/features/pots/PotsPage.tsx
+msgid "New pot"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "New profile"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/allocation/RuleForm.tsx
+msgid "New rule"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "Next due"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Next month"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid "Next planned item"
+msgstr ""
+
+#: src/components/charts/Chart.tsx
+msgid "No"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "No account"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "No account for this payment"
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+msgid "No accounts yet, so there is no curve."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "No accounts yet. Create your first one below."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "No active accounts. Create one below, or show archived accounts."
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "No backups yet."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid ""
+"No booked expense on this account yet. Enter it under Quick entry first."
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "No bookings yet."
+msgstr ""
+
+#: src/features/entry/TransactionList.tsx
+msgid "No bookings yet. Your first one appears here after saving."
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "No categories yet."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "No category"
+msgstr ""
+
+#: src/help/Handbook.tsx
+msgid "No chapter contains these words."
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "No debts recorded. Enter the first one above."
+msgstr ""
+
+#: src/features/recurring/ExpectedSection.tsx
+msgid "No expected items."
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "No income is waiting. Rules are set up under <0>Allocation</0>."
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid "No items."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid ""
+"No levy pot is set: only prepayments count as set aside. Choose a savings "
+"pot in the settings, or flag one as levy pot when you create it."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid ""
+"No levy rate is set, so no levy share is proposed. You can set it under "
+"Taxes & levies."
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "No match"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "No match: booked as a new entry."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "No movements yet."
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "No open debts in this area, so there is no debt curve."
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "No overdue items."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "No plan possible"
+msgstr ""
+
+#: src/features/payoff/WhatIf.tsx
+msgid "No plan possible with this amount."
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid ""
+"No pot can cover it: there are no pots on these accounts, or all are locked "
+"or empty."
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "No pots yet. Create the first one with New pot."
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "No receipt booked yet."
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "No recurring items yet. Create the first one above."
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "No reserve defined"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid ""
+"No reserve defined, so there is no alarm. Set a reserve floor per account, "
+"or a total reserve, under <0>Accounts</0>."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "No rule yet. Add one to start allocating."
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid ""
+"No rules yet. Give an uncategorised booking a category and z-finance offers "
+"to make a rule from it."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "No target amount: only the balance and its history."
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx src/features/import/ProfileStep.tsx
+#: src/features/levy/SettingsForm.tsx
+msgid "None"
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "None (top level)"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Not checked yet."
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Not imported unless you tick it."
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Not now"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Note"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Note (optional)"
+msgstr ""
+
+#: src/features/month/ReportTable.tsx
+msgid "Nothing booked."
+msgstr ""
+
+#: src/features/dashboard/DueCard.tsx
+msgid "Nothing is due. Planned items come from <0>Recurring items</0>."
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid ""
+"Nothing is due. Recurring and expected items are entered under <0>Recurring "
+"items</0>."
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "Nothing is planned or booked for this day."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid ""
+"Nothing is reserved yet: enter your levy rate in the settings and save."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid ""
+"Nothing to allocate. As soon as an income matches one of your rules, its "
+"proposal appears here."
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Nothing to check."
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Nothing to import: every line is a duplicate or left out."
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Off by default. Nothing is sent, only asked."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "On top of the instalments ({installments})."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "On top of the instalments ({installments}): {total} a month in total."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "On track"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid "One account"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "One amount column"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid ""
+"Only {free} is free until the end of the month, so this allocation would eat"
+" into your reserve. You could allocate {reduced} instead."
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Open"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "Open due items"
+msgstr ""
+
+#: src/help/HelpButton.tsx
+msgid "Open in the manual"
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid "Open levy gap"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "Open levy gap today: {gap}"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Open the download page"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Open years and their back-payment"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Opening balance (€)"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Opening date"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Order"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Order of the debts"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Other categories"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "Over 30 days overdue"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "Overdue"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid "Overdue items"
+msgstr ""
+
+#: src/app/pages.tsx
+msgid "Page not found"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx src/features/payoff/PayoffPage.tsx
+msgid "Paid"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/pots/PotDialogs.tsx
+msgid "Paid from"
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Paid from (business account)"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Paid off by (optional)"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Paid off in"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "Paid off on"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "Paid off."
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid "Parent category"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "Pattern"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "Pause"
+msgstr ""
+
+#: src/features/recurring/RecurringPage.tsx
+msgid ""
+"Pause this recurring item? Its planned items are removed; booked ones stay."
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx src/features/levy/RequiredCard.tsx
+msgid "Payoff budget"
+msgstr ""
+
+#: src/features/payoff/route.tsx
+msgid "Payoff plan"
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx src/features/levy/RequiredCard.tsx
+#: src/features/pots/PotDialogs.tsx
+msgid "Per month"
+msgstr ""
+
+#. placeholder {0}: index + 1
+#: src/features/allocation/RuleForm.tsx
+msgid "Percentage of target {0}"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Photo"
+msgstr ""
+
+#: src/features/receipts/labels.ts
+msgid "Photo not readable"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid "Plan"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Plan saved."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Plan the expense on the target date"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx src/features/levy/ChartsSection.tsx
+#: src/features/levy/ReserveSection.tsx src/features/payoff/PayoffPage.tsx
+msgid "Planned"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Planned and paid"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "Planned expenses"
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid "Planned for"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx src/features/levy/ChartsSection.tsx
+msgid "Planned income"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Planned item / similar booking"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Planned item for line {n}"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Planned items for the next 12 months are created on save."
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid "Planned items until {until}"
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid ""
+"Planned items up to 14 days ahead, overdue ones first. Press Enter to "
+"confirm an item with the amount and date shown, or change them first. "
+"Nothing is booked by itself."
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Planned →"
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "Planning"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Point, e.g. 1,234.56"
+msgstr ""
+
+#: src/features/import/labels.ts src/features/receipts/ReviewCard.tsx
+msgid "Possible duplicate"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Possible duplicates"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "Postpone"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "Postpone to"
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid "Postponed “{name}”."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+#: src/features/forecast/EmergencyPanel.tsx
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Pot"
+msgstr ""
+
+#. placeholder {0}: line.target
+#: src/features/allocation/ProposalList.tsx
+msgid "Pot \"{0}\""
+msgstr ""
+
+#. placeholder {0}: index + 1
+#: src/features/allocation/RuleForm.tsx
+msgid "Pot of target {0}"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Pot {name} closed."
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Pot {name} deleted."
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Pot {name} saved."
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid "Pots that would be used on {account}"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Prepayments"
+msgstr ""
+
+#: src/features/import/ImportPage.tsx
+msgid "Preview"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Preview again"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Preview of the import"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx src/features/month/ReportTable.tsx
+msgid "Previous month"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Previous month {previous} · Average of last 6 months {average}"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx src/features/month/RulesSection.tsx
+msgid "Priority"
+msgstr ""
+
+#: src/features/accounts/labels.ts src/features/dashboard/SideCards.tsx
+#: src/features/levy/ChartsSection.tsx
+msgid "Private"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx src/features/forecast/ForecastPage.tsx
+msgid "Private accounts"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Private income"
+msgstr ""
+
+#: src/features/import/ImportPage.tsx src/features/import/ProfileStep.tsx
+msgid "Profile"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Progress of {name}"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Proposal in emergency order"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Proposal rejected."
+msgstr ""
+
+#: src/features/import/ImportPage.tsx
+msgid "Protocol"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid ""
+"Put the most pressing debt (a reminder, the tax office) at the top: drag it,"
+" or use the arrow buttons."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "Quarterly"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Quarterly and yearly items repeat in the month of the start date."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/entry/EntryPage.tsx
+#: src/features/entry/route.tsx
+msgid "Quick entry"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Rank"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Rank 1 is used first. A locked pot is never used."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Rank {rank}"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Rate to reach the target: {rate}"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Reached"
+msgstr ""
+
+#: src/features/import/DetectedTable.tsx
+msgid "Read as {encoding}, separator: {separator}. First {shown} rows:"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Read by the agent:"
+msgstr ""
+
+#: src/features/import/FileStep.tsx
+msgid "Reading the file…"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx src/features/import/PreviewStep.tsx
+msgid "Reason"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Receipt photo {receiptId}"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid ""
+"Receipt photos sent to the receipt agent are booked automatically. Whatever "
+"the agent was unsure about waits here until you check it."
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx src/features/receipts/route.tsx
+msgid "Receipts"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Receipts to check"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Recurring item"
+msgstr ""
+
+#: src/features/recurring/RecurringPage.tsx src/features/recurring/route.tsx
+msgid "Recurring items"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Regular expression"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "Reject"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Rejected this month"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx src/features/payoff/PayoffPage.tsx
+msgid "Remaining"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Remaining after"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx src/features/levy/ChartsSection.tsx
+#: src/features/payoff/PayoffPage.tsx
+msgid "Remaining debt"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid "Remaining debt (EUR)"
+msgstr ""
+
+#: src/features/accounts/FirstRunPanel.tsx
+#: src/features/first-run/FirstRunWizard.tsx
+#: src/features/forecast/WhatIfForm.tsx
+#: src/features/settings-tax/DueDatesField.tsx
+msgid "Remove"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Remove all what-if items"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Remove match"
+msgstr ""
+
+#. placeholder {0}: index + 1
+#: src/features/allocation/RuleForm.tsx
+msgid "Remove target {0}"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Remove the match of line {n}"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Remove {name} from the what-if items"
+msgstr ""
+
+#: src/features/recurring/RecurringPage.tsx
+msgid ""
+"Rent, insurance, subscriptions, instalments: enter them once and they appear"
+" as planned items for the next 12 months."
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx src/features/levy/RequiredCard.tsx
+msgid "Required revenue"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Required revenue by block"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Required revenue per month"
+msgstr ""
+
+#: src/features/accounts/TotalReserveSetting.tsx
+msgid "Reserve"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Reserve build-up"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Reserve floor"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Reserve floor (€)"
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid "Reserve floors of the accounts"
+msgstr ""
+
+#: src/features/forecast/ForecastChart.tsx
+msgid "Reserve threshold"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid "Reserve {reserve}"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid ""
+"Reserve, back-payment, required revenue and both charts update when you "
+"save."
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "Restore"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Restore match"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Restore the match of line {n}"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid ""
+"Restored {photos, plural, one {# receipt photo} other {# receipt photos}}."
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid ""
+"Restored {rows, plural, one {# row} other {# rows}} in {tables, plural, one "
+"{# table} other {# tables}}."
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Result"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "Resume"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "Rhythm"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Rule deleted."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "Rule saved."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx src/features/month/MonthPage.tsx
+msgid "Rules"
+msgstr ""
+
+#: src/features/settings-tax/TaxForm.tsx src/features/settings-tax/TaxPage.tsx
+msgid "SVS contribution"
+msgstr ""
+
+#: src/features/accounts/TotalReserveSetting.tsx
+#: src/features/debts/DebtForm.tsx src/features/debts/DebtsPage.tsx
+#: src/features/entry/EntryForm.tsx src/features/pots/PotForm.tsx
+#: src/features/recurring/ItemsPanel.tsx
+#: src/features/recurring/RecurringForm.tsx
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Save"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "Save and recalculate"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Save as rule"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/accounts/CategoriesSection.tsx src/features/debts/DebtForm.tsx
+#: src/features/entry/EntryForm.tsx src/features/pots/PotForm.tsx
+#: src/features/recurring/RecurringForm.tsx
+msgid "Save changes"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx src/features/pots/PotDialogs.tsx
+msgid "Save plan"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx src/features/month/RuleDialog.tsx
+msgid "Save rule"
+msgstr ""
+
+#: src/features/receipts/ReceiptSettingsSection.tsx
+msgid "Save settings"
+msgstr ""
+
+#: src/features/import/PreviewRow.tsx
+msgid "Save the category of line {n} as a rule"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Saved as a planned item."
+msgstr ""
+
+#: src/features/debts/DebtsPage.tsx src/features/entry/EntryForm.tsx
+#: src/features/settings-tax/TaxForm.tsx
+msgid "Saved."
+msgstr ""
+
+#: src/features/levy/LevyPage.tsx
+msgid "Saved. All figures and charts are recalculated."
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid ""
+"Saves all data as a dated JSON export plus a copy of the database file, "
+"together with the receipt photos. z-finance also backs up automatically at "
+"every start and keeps the newest 10 of those."
+msgstr ""
+
+#: src/features/accounts/labels.ts
+msgid "Savings account"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Savings plan"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Savings plan for {name}"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Savings plan for {name} ended."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Savings plan for {name}: {shown} a month."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Savings plan: {planned} a month."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "Savings plans of pots"
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Savings pot rates"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx src/features/pots/route.tsx
+msgid "Savings pots"
+msgstr ""
+
+#: src/help/Handbook.tsx
+msgid "Search the manual"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid ""
+"See where your money is heading: the balance of the coming months day by "
+"day, when it is lowest, and whether it falls below your reserve before it "
+"happens."
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Semicolon ( ; )"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Set aside"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Set aside (%)"
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid ""
+"Set money aside for a purpose. A pot is a part of an account, not an account"
+" of its own: the balance of the account stays what it is."
+msgstr ""
+
+#: src/app/Layout.tsx src/features/levy/SettingsForm.tsx
+#: src/features/receipts/ReceiptSettingsSection.tsx
+#: src/features/settings/route.tsx src/features/settings/SettingsPage.tsx
+msgid "Settings"
+msgstr ""
+
+#: src/features/receipts/ReceiptSettingsSection.tsx
+msgid "Settings saved."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid ""
+"Several pots are flagged as levy pot; the one created first is used. Choose "
+"one in the settings."
+msgstr ""
+
+#: src/features/levy/RequiredCard.tsx
+msgid "Share"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+#: src/features/allocation/RuleForm.tsx
+msgid "Shares"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Show archived accounts"
+msgstr ""
+
+#: src/components/charts/Chart.tsx
+msgid "Show as table"
+msgstr ""
+
+#: src/components/charts/Chart.tsx
+msgid "Show chart"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Show proposal"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Show the preview"
+msgstr ""
+
+#: src/features/accounts/FirstRunPanel.tsx src/features/due/DueRow.tsx
+msgid "Skip"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid ""
+"Skip this item? It will count towards neither the balance nor the forecast; "
+"the recurring item goes on."
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid "Skipped “{name}”."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Smallest first"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Some banks put a title above the column names."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid ""
+"Some debts have no paying account, so no special payment can be planned for "
+"them: {unpayable}. Set one on the <0>Debts</0> page."
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx src/features/payoff/PayoffPage.tsx
+msgid "Special payment"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid ""
+"Special payments for the next 12 months appear as planned items in the "
+"<0>due list</0>; confirm them when you have paid."
+msgstr ""
+
+#: src/components/charts/SplitBar.tsx
+msgid "Split by block: {summary}"
+msgstr ""
+
+#: src/features/accounts/FirstRunPanel.tsx
+msgid "Start with the default categories?"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "Started"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Starts on"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx src/features/recurring/ItemsPanel.tsx
+msgid "Status"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "Status and actions"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "Stays free"
+msgstr ""
+
+#: src/features/import/ImportPage.tsx
+msgid "Steps"
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid "Still not covered: {uncovered}"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "Suggested from earlier bookings."
+msgstr ""
+
+#: src/features/month/Drilldown.tsx
+msgid "Sum"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "Sum {areaName}"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Tab"
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Take"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx src/features/pots/PotDialogs.tsx
+msgid "Take out"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "Take out of {name}"
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid "Take {covered} from these pots ({account})"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid "Taken from the pots. The forecast is recalculated."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "Taken out"
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid ""
+"Taking money out of a pot moves it to the free balance of the account and "
+"may push the pot's target date. It does not change the balance of the "
+"account itself."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Target"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Target amount (optional)"
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+#: src/features/pots/EmergencyDialog.tsx
+msgid "Target date"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "Target date (optional)"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid ""
+"Target dates move back when money is taken; changed amounts are recalculated"
+" when you confirm."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Target minus set aside"
+msgstr ""
+
+#. placeholder {0}: index + 1
+#: src/features/allocation/RuleForm.tsx
+msgid "Target {0}"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Taxes"
+msgstr ""
+
+#: src/features/settings-tax/route.tsx src/features/settings-tax/TaxPage.tsx
+msgid "Taxes & levies"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid ""
+"Taxes & levies are not set yet. Fill in an amount and the account below."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Taxes and contributions"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid ""
+"Taxes and levies are not set, so no prepayment is planned. Enter them under "
+"<0>Taxes & levies</0>."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/entry/TransactionList.tsx
+#: src/features/forecast/DayItems.tsx src/features/import/PreviewStep.tsx
+#: src/features/import/ProfileStep.tsx src/features/month/Drilldown.tsx
+#: src/features/month/UncategorizedList.tsx
+#: src/features/receipts/ReceiptsPage.tsx
+#: src/features/recurring/ExpectedSection.tsx
+#: src/features/recurring/RecurringForm.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Text"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Text (optional)"
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "Text column (purpose)"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Text contains the pattern"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid "Text to look for"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "The account the planned back-payment is taken from."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid ""
+"The account you use most — your current account, for example. Enter the "
+"balance it has today; every booking you record later builds on it."
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "The amount already repaid must be less than the total."
+msgstr ""
+
+#: src/features/accounts/TotalReserveSetting.tsx
+msgid ""
+"The amount that should stay available across all accounts together. Each "
+"account also has its own reserve floor on the Accounts page."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid ""
+"The budget is higher than what is available ({available}). The plan still "
+"works, but the forecast will show your reserve being used."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid ""
+"The category kind does not match the amount. Saving is still possible "
+"(refund, reversal)."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid ""
+"The date is in the future: this will be saved as a planned item and does not"
+" change the balance yet."
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "The date must be today or later."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid ""
+"The debt with the highest interest rate is paid off first: it costs the "
+"least interest."
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "The end date must not be before the start date."
+msgstr ""
+
+#: src/features/levy/LevyPage.tsx
+msgid ""
+"The estimate for {year} is archived. Enter the real assessment as an "
+"expected item under Recurring items."
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "The expense is planned on the target date."
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "The export was migrated from schema version {from} to {to}."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "The highest-ranked pot of the account"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "The interface, the help and the manual follow this choice."
+msgstr ""
+
+#: src/app/LanguageSwitch.tsx src/features/settings/SettingsPage.tsx
+msgid ""
+"The language could not be saved on the server. It applies in this browser "
+"only."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid ""
+"The levy share of {levyShare} % is added on top and goes into your levy pot."
+" It is already set aside from the moment the income is booked, so you cannot"
+" lower it."
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid ""
+"The line falls short of your reserve by {shortfall}. These pots would cover "
+"it, in your emergency order. Locked pots are never used."
+msgstr ""
+
+#: src/help/Handbook.tsx
+msgid "The manual has no chapters yet."
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+msgid "The next 90 days"
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+msgid ""
+"The next 90 days: use the left and right arrow keys to read a day (Shift for"
+" a week)"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid ""
+"The open gap of {gapAmount} is larger than the free balance of your payment "
+"accounts ({gapFree}). The tax office and SVS will claim money you have not "
+"set aside."
+msgstr ""
+
+#: src/features/levy/FreeAmountCard.tsx
+msgid ""
+"The open levy gap is money that income tax and SVS will claim, so it is not "
+"free to spend: it is subtracted from what your accounts hold."
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid ""
+"The payment was more than the remaining amount. Only {booked} were booked; "
+"the rest stays on the account."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "The pot holds {balance}."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid ""
+"The pot pays up to its balance of {balance}; the rest comes from the free "
+"balance."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "The pot was saved, but its position could not be set: {why}"
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid "The rate applies to"
+msgstr ""
+
+#: src/features/levy/LevyPage.tsx
+msgid ""
+"The rate changed from {jumpFrom} % to {jumpTo} %, more than 10 percentage "
+"points. Your reserve so far was built with the old rate, so the gap shows "
+"the difference. Consider adjusting your allocation rule so new income is set"
+" aside at the new rate."
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "The receipt agent has not run yet."
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid ""
+"The reserve for taxes and levies is kept in the pot with this marker; set it"
+" on one pot only."
+msgstr ""
+
+#: src/features/levy/SettingsForm.tsx
+msgid ""
+"The savings pot that holds your levy reserve. Without a choice, the pot "
+"flagged as levy pot is used."
+msgstr ""
+
+#: src/api/client.ts
+msgid "The server sent an answer that is not valid JSON."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "The shares add up to more than 100 % of the income."
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "The shares add up to more than the income."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "The shares add up to {share} % of the income."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "The smallest debt is paid off first: you see progress soonest."
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "The total reserve"
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "The unlocked pots are {missing} short of the amount."
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "There are no open debts. Enter them first: <0>Debts</0>."
+msgstr ""
+
+#: src/help/HelpButton.tsx
+msgid "There is no help for this page yet."
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid ""
+"These incomes are gone, but the transfers you confirmed for them are still "
+"booked. Undo them in the <0>quick entry</0> if the money did not move."
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "These lines are not imported"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "This line has no text to make a rule from."
+msgstr ""
+
+#: src/features/month/ReportTable.tsx
+msgid "This month"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid ""
+"This pot is locked. Take the money anyway; it is logged as an emergency."
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid ""
+"This recurring item is paused: it has no planned items until you resume it."
+msgstr ""
+
+#: src/features/forecast/EmergencyPanel.tsx
+msgid ""
+"This suggestion looks at your saved plan only, not at the what-if items."
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "To account"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "To allocate"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx src/features/receipts/ReviewCard.tsx
+msgid "To check"
+msgstr ""
+
+#: src/features/pots/PotForm.tsx
+msgid "To plan the expense, enter the target amount and the target date."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "To pot"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "To stay debt-free by {plannedEnd}, pay {catchUp} extra next month."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "To the start page"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid "Together"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "Too slow, skipped"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx src/features/month/MonthPage.tsx
+#: src/features/month/ReportTable.tsx
+msgid "Total"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "Total (€)"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx
+msgid "Total amount"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+#: src/features/allocation/RuleForm.tsx
+msgid "Total reserve"
+msgstr ""
+
+#: src/features/accounts/TotalReserveSetting.tsx
+msgid "Total reserve (€)"
+msgstr ""
+
+#: src/features/accounts/TotalReserveSetting.tsx
+msgid "Total reserve saved: {savedAmount}"
+msgstr ""
+
+#: src/features/accounts/labels.ts src/features/due/DueRow.tsx
+#: src/features/entry/EntryForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "Transfer"
+msgstr ""
+
+#: src/features/entry/TransactionList.tsx
+msgid "Transfer from {other}"
+msgstr ""
+
+#: src/features/entry/TransactionList.tsx
+#: src/features/recurring/RecurringList.tsx
+msgid "Transfer to {other}"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid ""
+"Transfers to and from the other area (owner draw or contribution) are not "
+"counted as income or expenses: in {movementIn}, out {movementOut}."
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid ""
+"Try an item that is not in your plan, for example a larger purchase. The "
+"curve is redrawn. Nothing is saved: the items disappear when you leave or "
+"reload the page, unless you add one as an expected item."
+msgstr ""
+
+#: src/features/payoff/WhatIf.tsx
+msgid ""
+"Try more or less money a month and see when you would be debt-free. This "
+"does not change your plan."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+#: src/features/backup/BackupPage.tsx
+#: src/features/first-run/FirstRunWizard.tsx
+#: src/features/forecast/WhatIfForm.tsx
+msgid "Type"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "UTF-8"
+msgstr ""
+
+#: src/features/import/DetectedTable.tsx
+msgid "Umlauts or the euro sign look wrong. Choose the other encoding above."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Unarchive"
+msgstr ""
+
+#: src/features/dashboard/MonthCard.tsx src/features/import/DoneStep.tsx
+#: src/features/import/PreviewRow.tsx src/features/import/RunsList.tsx
+#: src/features/levy/ChartsSection.tsx src/features/month/MonthPage.tsx
+#: src/features/month/ReportTable.tsx
+msgid "Uncategorised"
+msgstr ""
+
+#: src/features/month/MonthPage.tsx
+msgid "Uncategorised bookings"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid ""
+"Uncategorised bookings that match get the category <0>{categoryName}</0>. "
+"Bookings that already have a category are never changed."
+msgstr ""
+
+#: src/features/pots/PotsPage.tsx
+msgid "Unlocked pots, in rank order"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Updates"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Use this amount"
+msgstr ""
+
+#: src/features/manual/route.tsx
+msgid "User manual"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "Version {latest} is available; you run {current}."
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid "View"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx src/features/payoff/PayoffPage.tsx
+msgid "Warning"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Weekday"
+msgstr ""
+
+#: src/features/recurring/RecurringForm.tsx
+msgid "Weekly"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Welcome to z-finance"
+msgstr ""
+
+#: src/features/settings-tax/TaxPage.tsx
+msgid "What"
+msgstr ""
+
+#: src/features/forecast/DayItems.tsx
+msgid "What if"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx src/features/payoff/WhatIf.tsx
+msgid "What if?"
+msgstr ""
+
+#: src/features/levy/ChartsSection.tsx
+msgid ""
+"What you still owe at the end of each month, with the planned instalments "
+"taken into account. It has its own axis because it is a stock, not a monthly"
+" amount."
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "What-if items"
+msgstr ""
+
+#: src/features/import/RunsList.tsx
+msgid "When"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Which language?"
+msgstr ""
+
+#: src/features/import/labels.ts
+msgid "Windows-1252 (older Windows exports)"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "With receipt photos (.zip)"
+msgstr ""
+
+#: src/features/allocation/RuleForm.tsx
+msgid "Without an open debt, the debt share goes to"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Without category"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "Writing the bookings…"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "Year"
+msgstr ""
+
+#: src/features/debts/DebtForm.tsx src/features/recurring/RecurringForm.tsx
+msgid "Yearly"
+msgstr ""
+
+#: src/components/charts/Chart.tsx
+msgid "Yes"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "You run version {current}, and it is the newest one."
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid "You run version {current}."
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "Your accounts"
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "Your first account"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid ""
+"Your income has risen. You could put {suggested} a month on top of the "
+"instalments."
+msgstr ""
+
+#: src/app/pages.tsx
+msgid ""
+"Your local finance and liquidity overview. Features appear in the navigation"
+" as they are added."
+msgstr ""
+
+#: src/features/forecast/ForecastChart.tsx
+msgid ""
+"Your money day by day. Available after levies is the balance minus the open "
+"levy gap (income tax and SVS still to be paid). The dashed line is your "
+"reserve. The lowest point and the reserve check refer to Available after "
+"levies, not to the balance."
+msgstr ""
+
+#: src/features/dashboard/MiniCurve.tsx
+msgid ""
+"Your money day by day. Available after levies is the balance minus the open "
+"levy gap — income tax and SVS still to be paid."
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Your order"
+msgstr ""
+
+#: src/features/payoff/PlanForm.tsx
+msgid "Your plan"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "after costs, instalments and levies"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "after levies and reserve"
+msgstr ""
+
+#: src/features/accounts/AccountsSection.tsx
+msgid "archived"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "behind plan"
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid "booked"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "by {targetDay}"
+msgstr ""
+
+#: src/features/due/DueRow.tsx src/features/recurring/ItemsPanel.tsx
+msgid "changed"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "check"
+msgstr ""
+
+#: src/features/receipts/ReviewCard.tsx
+msgid "confidence {percent} %"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "contains"
+msgstr ""
+
+#: src/features/recurring/ItemsPanel.tsx
+msgid "due {due}"
+msgstr ""
+
+#: src/features/backup/BackupPage.tsx
+msgid "export.json only"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "from Taxes & levies"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "monthly"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "monthly on day {day}"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "needs {rate} a month"
+msgstr ""
+
+#: src/features/pots/OrderList.tsx
+msgid "never used in an emergency"
+msgstr ""
+
+#: src/features/receipts/ReceiptsPage.tsx
+msgid "not finished"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx src/features/import/PreviewStep.tsx
+msgid "not imported"
+msgstr ""
+
+#: src/features/forecast/WhatIfForm.tsx
+msgid "not in this view"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "of the new bookings"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid "of which reserved for levies: {reserved}"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "off"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "on track"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "open for {days} days"
+msgstr ""
+
+#: src/features/dashboard/DueCard.tsx
+msgid "overdue"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "paid off"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "paused"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx src/features/entry/TransactionList.tsx
+#: src/features/recurring/ItemsPanel.tsx
+msgid "planned"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "planned: {plannedEnd}"
+msgstr ""
+
+#: src/features/allocation/AllocationPage.tsx
+msgid "proposals waiting"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "quarterly"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "quarterly on day {day}"
+msgstr ""
+
+#: src/features/entry/TransactionList.tsx
+msgid "recurring"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "reduced"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid "regular expression"
+msgstr ""
+
+#: src/features/payoff/PayoffPage.tsx
+msgid "running"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "set aside"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx src/features/entry/TransactionList.tsx
+#: src/features/recurring/ItemsPanel.tsx
+msgid "skipped"
+msgstr ""
+
+#: src/features/allocation/ProposalList.tsx
+msgid "the total reserve"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid "unchanged since the end of last month"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "until {end}"
+msgstr ""
+
+#: src/app/Layout.tsx
+msgid "v{version} · schema {schema}"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "weekly"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "yearly"
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "yearly on day {day}"
+msgstr ""
+
+#: src/features/settings/UpdateCheckSetting.tsx
+msgid ""
+"z-finance can look whether a newer version has been published. It only asks "
+"GitHub which version that is — it downloads and installs nothing. Your data "
+"stays where it is when you install a new version."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid "z-finance is ready. Open the start page to see your figures."
+msgstr ""
+
+#: src/features/first-run/FirstRunWizard.tsx
+msgid ""
+"z-finance suggests a set for private and business use. Rename what you call "
+"differently, remove what you do not need — nothing is saved before the last "
+"step."
+msgstr ""
+
+#: src/features/accounts/FirstRunPanel.tsx
+msgid ""
+"z-finance suggests a set of categories for private and business use. Change "
+"names, kinds or areas, remove what you do not need and add your own. Nothing"
+" is saved until you click “Adopt categories”."
+msgstr ""
+
+#. placeholder {0}: proposal.days_open
+#: src/features/dashboard/SideCards.tsx
+msgid "{0, plural, one {# day} other {# days}}"
+msgstr ""
+
+#. placeholder {0}: data.due_items.length
+#: src/features/dashboard/Kpis.tsx
+msgid ""
+"{0, plural, one {# item due in the next 14 days} other {# items due in the "
+"next 14 days}}"
+msgstr ""
+
+#. placeholder {0}: preview.count
+#: src/features/month/RuleDialog.tsx
+msgid ""
+"{0, plural, one {# other uncategorised booking matches.} other {# other "
+"uncategorised bookings match.}}"
+msgstr ""
+
+#: src/features/month/RuleDialog.tsx
+msgid ""
+"{applied, plural, one {Rule saved. # booking categorised.} other {Rule "
+"saved. # bookings categorised.}}"
+msgstr ""
+
+#: src/features/pots/PotCard.tsx
+msgid "{balance} of {targetText}"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "{booked} booked."
+msgstr ""
+
+#: src/features/accounts/CategoriesSection.tsx
+msgid ""
+"{bookingCount, plural, one {This category has # booking.} other {This "
+"category has # bookings.}}"
+msgstr ""
+
+#: src/features/payoff/WhatIf.tsx
+msgid "{change} per month"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid ""
+"{count, plural, one {# receipt could not be booked by itself and is waiting "
+"for you.} other {# receipts could not be booked by themselves and are "
+"waiting for you.}}"
+msgstr ""
+
+#: src/features/debts/DebtList.tsx
+msgid "{count} instalments"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid ""
+"{count} instalments left, next on {next}, paid off on {end} (last instalment"
+" {last})."
+msgstr ""
+
+#: src/features/recurring/RecurringList.tsx
+msgid "{count} planned"
+msgstr ""
+
+#: src/features/due/DueRow.tsx
+msgid "{days, plural, one {# day overdue} other {# days overdue}}"
+msgstr ""
+
+#: src/features/month/RulesSection.tsx
+msgid ""
+"{lastApplied, plural, one {# booking categorised.} other {# bookings "
+"categorised.}}"
+msgstr ""
+
+#: src/features/due/DuePage.tsx
+msgid ""
+"{lateCount, plural, one {# item is more than 30 days overdue: confirm, "
+"postpone or skip it.} other {# items are more than 30 days overdue: confirm,"
+" postpone or skip them.}}"
+msgstr ""
+
+#: src/features/forecast/ForecastPage.tsx
+msgid "{months} months"
+msgstr ""
+
+#: src/features/entry/EntryForm.tsx
+msgid "{name} (archived)"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "{name} covered {covered}."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid ""
+"{name} covered {covered}; {free} came from the free balance of the account."
+msgstr ""
+
+#: src/features/dashboard/MonthCard.tsx
+msgid "{name} so far"
+msgstr ""
+
+#: src/features/forecast/FiguresPanel.tsx
+msgid ""
+"{overdue, plural, one {# overdue item is counted from today.} other {# "
+"overdue items are counted from today.}}"
+msgstr ""
+
+#: src/features/debts/DebtDetail.tsx
+msgid "{paid} of {total} repaid."
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "{rate} % of the business income"
+msgstr ""
+
+#: src/features/levy/ReserveSection.tsx
+msgid "{rate} % of the business profit"
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "{shown} assigned to {name}."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "{shown} moved from {name} to {to}."
+msgstr ""
+
+#: src/features/pots/PotDialogs.tsx
+msgid "{shown} taken out of {name}."
+msgstr ""
+
+#: src/features/pots/EmergencyDialog.tsx
+msgid "{summed} of {requested} needed. The proposal covers {covered}."
+msgstr ""
+
+#: src/components/charts/Chart.tsx
+msgid "{title}: use the left and right arrow keys to read each month"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid "{trend} less than at the end of last month"
+msgstr ""
+
+#: src/features/dashboard/Kpis.tsx
+msgid "{trend} more than at the end of last month"
+msgstr ""
+
+#: src/features/dashboard/SideCards.tsx
+msgid ""
+"{waiting, plural, one {# proposal has been waiting for 7 days or more.} "
+"other {# proposals have been waiting for 7 days or more.}}"
+msgstr ""
+
+#: src/features/import/PreviewStep.tsx
+msgid "{write, plural, one {Apply: # booking} other {Apply: # bookings}}"
+msgstr ""
+
+#: src/features/import/DoneStep.tsx
+msgid "{written} bookings written, in one step."
+msgstr ""
+
+#: src/features/import/ProfileStep.tsx
+msgid "“{value}” is not a column of this file."
+msgstr ""

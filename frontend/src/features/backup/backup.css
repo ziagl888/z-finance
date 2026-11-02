@@ -1,0 +1,5 @@
+/* Backup: layout only; surfaces, the table and buttons come from src/ui. */
+
+.backup-path {
+  word-break: break-all;
+}

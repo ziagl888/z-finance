@@ -1,0 +1,59 @@
+# The manual (docs/manual/) as a GitHub Pages site, built from the same chapters and the same
+# Handbook component as the in-app manual (frontend/vite.manual.config.ts). SPEC AK21, UC NF11.
+#
+# Runs only on pushes to main. The build job always runs, so a broken site fails on main. The
+# deploy job runs only when the repository variable PAGES_ENABLED is 'true': Pages must first be
+# enabled (Settings -> Pages -> Source "GitHub Actions"), which a private repository can only do on
+# a plan that includes Pages. Without it the workflow stays green and deploys nothing.
+name: pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Build the manual site
+        working-directory: frontend
+        run: |
+          npm ci
+          npx vite build --config vite.manual.config.ts
+
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: frontend/dist/manual
+
+  deploy:
+    needs: build
+    if: vars.PAGES_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5.0.1

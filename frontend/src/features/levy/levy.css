@@ -1,0 +1,125 @@
+/* Levy & revenue: layout only. Cards, fields, buttons, tables, badges and amounts come from
+   src/ui and styles/base.css; the charts and the split bar from src/components/charts. */
+
+.levy-intro {
+  margin-top: 0;
+  max-width: 62rem;
+}
+
+/* Free amount and required revenue on the left, the settings on the right; one column below 1200 px */
+.levy-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: calc(var(--space) * 1.5);
+  align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .levy-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.levy-reserve > h2,
+.levy-charts > h2 {
+  margin-top: 0;
+}
+
+.levy-alert {
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  color: var(--alert-ink);
+  background: var(--alert-bg);
+  border-radius: var(--radius-sm);
+}
+
+.levy-jump {
+  max-width: 62rem;
+}
+
+.levy-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.levy-form h2 {
+  margin: 0;
+}
+
+.levy-base,
+.levy-due {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.levy-base legend,
+.levy-due legend {
+  padding: 0;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+
+.levy-due-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.levy-day {
+  width: 5rem;
+}
+
+/* Inside its own scroll box the sticky header must not keep the page header's offset. */
+.levy-scroll {
+  --sticky-top: 0;
+  overflow-x: auto;
+}
+
+.levy-scroll .ui-table {
+  margin-bottom: 0;
+}
+
+.levy-row-actions {
+  text-align: right !important;
+  white-space: nowrap;
+}
+
+.levy-total th,
+.levy-total td {
+  font-weight: 700;
+}
+
+.levy-gap-row th,
+.levy-gap-row td {
+  font-weight: 600;
+}
+
+.levy-rule {
+  max-width: 34rem;
+}
+
+.levy-required-value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+}
+
+/* One filter row above both charts */
+.levy-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: var(--space);
+}
+
+.levy-filter .ui-segmented {
+  margin: 0;
+  border: 0;
+}

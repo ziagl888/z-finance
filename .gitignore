@@ -1,0 +1,35 @@
+# Personal data: never in the repository (UC NF2/NF7)
+data/
+.env
+.env.*
+!.env.example
+*.sqlite3
+*.sqlite3-*
+*.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Frontend
+node_modules/
+dist/
+# SPA bundle built by `just build`, served by the backend
+backend/zfinance/web/
+
+# Installer build output (frozen bundle, generated icon, setup executable)
+packaging/build/
+
+# Tooling
+.claude/worktrees/
+# Screenshots a Playwright MCP session drops in the repository root. They show whatever was on the
+# screen, which in this repository must never be a real figure (UC NF7).
+.playwright-mcp/
+
+# Demo and run folders with personal data, and logs
+data-*/
+*.log

@@ -1,0 +1,32 @@
+/* Taxes & levies: layout only; surfaces, fields, buttons and the plan table come from src/ui. */
+
+.tax > .ui-hint {
+  margin: 0 0 var(--space);
+}
+
+.tax-form,
+.tax-block,
+.tax-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tax-form h2 {
+  margin: 0.5rem 0 0;
+}
+
+.tax-form .ui-field {
+  max-width: 16rem;
+}
+
+.tax-date-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tax-dates > button {
+  align-self: flex-start;
+}

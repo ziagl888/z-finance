@@ -1,0 +1,113 @@
+/* Quick entry: layout only; surfaces, fields, buttons and the table come from src/ui. */
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* Disabled while a save is in flight (T-2026-CU-9130-043): a plain fieldset so the browser
+   disables every field in one place instead of each one repeating `disabled`. Reset to a
+   borderless flex container so it is invisible in the layout. */
+.entry-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.entry-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space);
+}
+
+.entry-editing {
+  margin: 0;
+  font-weight: 600;
+  color: var(--gold-ink);
+}
+
+.entry-grid-main {
+  grid-template-columns: minmax(10rem, 0.8fr) minmax(14rem, 1.6fr) minmax(
+      13rem,
+      1.2fr
+    );
+}
+
+/* Amount: sign prefix joined to the input, larger right-aligned digits. */
+.entry-amount {
+  display: flex;
+  align-items: stretch;
+}
+
+.entry-amount span {
+  display: flex;
+  align-items: center;
+  padding: 0 0.7rem;
+  font-weight: 700;
+  background: var(--neutral-bg);
+  border: 1px solid var(--line);
+  border-right: 0;
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+}
+
+.entry-amount input {
+  flex: 1;
+  min-width: 0;
+  border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.entry-amount-expense span {
+  color: var(--alert-ink);
+}
+
+.entry-amount-income span,
+.entry-amount-transfer span {
+  color: var(--ok-ink);
+}
+
+.entry-warning {
+  color: var(--alert-ink);
+}
+
+.entry-planned {
+  margin: 0;
+  padding: 0.4rem 0.6rem;
+  border-left: 3px solid var(--gold);
+}
+
+/* Latest bookings: the row open in the form is marked */
+.entry-row-editing {
+  background: var(--row-hover);
+}
+
+.entry-row-editing td:first-child {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.entry-row-planned td {
+  color: var(--ink-soft);
+}
+
+.entry-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.entry-row-actions {
+  white-space: nowrap;
+  text-align: right !important;
+}
+
+.entry-row-actions button + button {
+  margin-left: 0.25rem;
+}

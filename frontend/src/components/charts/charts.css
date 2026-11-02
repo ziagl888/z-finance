@@ -1,0 +1,291 @@
+/*
+ * Charts (src/components/charts). Chrome (grid, axes, text, surface, marker) uses the design tokens.
+ * The series colours are the validated dataviz palette (8 hues, `node validate_palette.js` on the
+ * EDEL card surface #fbf8f3 / #26231f: hue order, CVD and normal-vision separation all pass; aqua,
+ * yellow and magenta are below 3:1 on the light surface, which the table twin, the legend and the
+ * tooltip make up for). EDEL has too few hues for stacked categories and reserves green/terracotta
+ * for status, so the series set lives here, scoped to the chart, not in tokens.css.
+ */
+
+.chart,
+.chart-split,
+.chart-key {
+  --chart-1: #2a78d6;
+  --chart-2: #eb6834;
+  --chart-3: #1baf7a;
+  --chart-4: #eda100;
+  --chart-5: #e87ba4;
+  --chart-6: #008300;
+  --chart-7: #4a3aa7;
+  --chart-8: #e34948;
+  --chart-other: var(--ink-faint);
+}
+
+@media (prefers-color-scheme: dark) {
+  .chart,
+  .chart-split,
+  .chart-key {
+    --chart-1: #3987e5;
+    --chart-2: #d95926;
+    --chart-3: #199e70;
+    --chart-4: #c98500;
+    --chart-5: #d55181;
+    --chart-6: #008300;
+    --chart-7: #9085e9;
+    --chart-8: #e66767;
+  }
+}
+
+.chart {
+  margin: 0 0 calc(var(--space) * 1.5);
+  padding: 0;
+  transition: opacity 0.15s;
+}
+
+.chart-busy {
+  opacity: 0.55;
+}
+
+.chart-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space);
+}
+
+.chart-title {
+  margin: 0;
+}
+
+.chart-description {
+  margin: 0.25rem 0 0;
+  max-width: 62rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  list-style: none;
+}
+
+.chart-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.chart-swatch {
+  display: inline-block;
+  flex: none;
+}
+
+.chart-swatch-bar {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 3px;
+}
+
+.chart-swatch-line {
+  width: 1rem;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.chart-flag-icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: var(--alert);
+}
+
+.chart-plotwrap {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+/* recessive furniture: solid hairlines, text only in text tokens */
+.chart-grid {
+  stroke: var(--hairline);
+  stroke-width: 1;
+}
+
+.chart-baseline {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.chart-divider {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.chart-tick {
+  font-size: 11px;
+  fill: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-tick-flag {
+  font-weight: 700;
+  fill: var(--alert-ink);
+}
+
+.chart-axis-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  fill: var(--ink-soft);
+}
+
+.chart-flag-band {
+  fill: var(--alert-bg);
+}
+
+.chart-flag-mark {
+  fill: var(--alert);
+}
+
+.chart-active-band {
+  fill: var(--row-hover);
+}
+
+/* a 2 px ring in the surface colour keeps a dot legible where it crosses other marks */
+.chart-dot {
+  stroke: var(--card);
+  stroke-width: 2;
+}
+
+/* the chosen category and the marked point (lowest value) of a line chart */
+.chart-selected {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+
+.chart-mark {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.chart-mark-label {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* the one surface that takes the pointer and the keyboard; the ring shows when focused */
+.chart-hit {
+  fill: transparent;
+  outline: none;
+  cursor: crosshair;
+}
+
+.chart-hit:focus-visible {
+  stroke: var(--gold-deep);
+  stroke-width: 2;
+  rx: 6;
+}
+
+.chart-tip {
+  position: absolute;
+  z-index: 2;
+  min-width: 11rem;
+  max-width: 20rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--ink);
+  pointer-events: none;
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  transform: translateX(0.75rem);
+}
+
+.chart-tip-left {
+  transform: translateX(calc(-100% - 0.75rem));
+}
+
+.chart-tip-title {
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.chart-tip-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.1rem 0;
+}
+
+.chart-tip-row strong {
+  font-weight: 700;
+}
+
+.chart-tip-row span:last-child {
+  color: var(--ink-soft);
+}
+
+.chart-tip-flag {
+  margin-top: 0.35rem;
+  font-weight: 600;
+  color: var(--alert-ink);
+}
+
+.chart-note {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.chart-table {
+  margin-top: 0.75rem;
+}
+
+.chart-table th[scope="row"] {
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Colour key of a block in a table next to a split bar (fill only; the label carries the meaning) */
+.chart-key {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.5rem;
+  border-radius: 3px;
+}
+
+/* Split bar: one horizontal bar cut into blocks (share of a total), 2 px gaps between them */
+.chart-split {
+  margin: 0.5rem 0 1rem;
+}
+
+.chart-split-bar {
+  display: flex;
+  gap: 2px;
+  height: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chart-split-bar > li {
+  min-width: 2px;
+  border-radius: 4px;
+}

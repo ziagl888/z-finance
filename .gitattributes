@@ -1,0 +1,6 @@
+# LF in the repository and in every checkout, regardless of core.autocrlf.
+* text=auto eol=lf
+
+# Append-only (see its header): parallel branches each add lines under
+# "## Unreleased", so a union merge keeps both instead of conflicting.
+CHANGELOG.md merge=union

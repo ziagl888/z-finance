@@ -1,0 +1,104 @@
+/* Month: layout only (toolbar, category tables side by side, drilldown, rule dialog). Surfaces,
+   fields, buttons, tables, badges and figures come from src/ui and base.css. */
+
+.month-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space);
+  margin-bottom: var(--space);
+}
+
+.month-picker {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.month-export {
+  margin-left: auto;
+}
+
+.month-title {
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+/* The figure value keeps its <strong> but takes the KPI tile's weight. */
+.month .ui-kpi-value strong {
+  font-weight: inherit;
+}
+
+.month-tables {
+  display: grid;
+  /* Side by side only when each table has room for its four columns; else stacked. */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 36rem), 1fr));
+  gap: var(--space);
+  align-items: start;
+}
+
+/* A category is a button that reads as a link in its table cell. */
+.month-link {
+  min-height: 0;
+  padding: 0;
+  color: var(--gold-ink);
+  font-weight: inherit;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  background: none;
+  border: 0;
+  border-radius: 0;
+}
+
+.month-link:disabled {
+  color: var(--ink-soft);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.month-muted td {
+  color: var(--ink-soft);
+}
+
+.month-selected {
+  box-shadow: inset 3px 0 0 var(--gold);
+}
+
+.month-sub {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.month-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space);
+}
+
+.month-card-head h2,
+.month-dialog h2 {
+  margin: 0 0 0.5rem;
+}
+
+.month-dialog .ui-form-grid {
+  align-items: end;
+  margin: 0.75rem 0;
+}
+
+.month-field-wide {
+  grid-column: 1 / -1;
+}
+
+.month-actions {
+  margin-top: 0.75rem;
+}
+
+.month-invalid code {
+  color: var(--alert-ink);
+}
+
+.month-row-actions {
+  white-space: nowrap;
+  text-align: right !important;
+}

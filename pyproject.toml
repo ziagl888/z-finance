@@ -1,0 +1,89 @@
+[project]
+name = "z-finance"
+version = "1.0.0"
+description = "Local personal finance and liquidity tool: quick entry, recurring items, CSV import, cash-flow forecast."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.13"
+dependencies = [
+    "babel>=2.17",
+    "fastapi>=0.141",
+    "platformdirs>=4.11",
+    "python-multipart>=0.0.20",
+    "regex>=2026.9",
+    "uvicorn>=0.53",
+]
+
+[project.scripts]
+z-finance = "zfinance.cli:main"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28",
+    "pytest>=9.1",
+    "ruff>=0.16",
+]
+# Regenerating the manual's screenshots (tools/screenshots.py, task -028). Not installed by
+# `uv sync`: run `uv run --group docs playwright install chromium` once, then
+# `uv run --group docs python tools/screenshots.py`.
+docs = [
+    "pillow>=12.0",
+    "playwright>=1.55",
+]
+# Building the Windows installer (packaging/, task -027). Not installed by `uv sync`: the group is
+# for the build machine and the release workflow. pystray and pillow are frozen into the bundle by
+# PyInstaller, so the launcher has its tray icon without them being dependencies of the wheel.
+packaging = [
+    "pillow>=12.0",
+    "pyinstaller>=6.16",
+    "pystray>=0.19.5",
+]
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "zfinance"
+module-root = "backend"
+
+[tool.uv.workspace]
+# The receipt agent (UC-ZF-013) is its own package, pinned by this lock file.
+members = ["agent"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "tools/tests", "agent/tests"]
+# tools/ holds the commit gates as plain scripts; their tests import them by module name.
+# agent/ is on the path so its tests run in the one suite without installing the package.
+# packaging/ holds the installer scripts, likewise imported by module name (tests/test_launcher.py).
+pythonpath = ["tools", "agent", "packaging"]
+# The browser acceptance run (tests/e2e) is deselected by default: it starts Chromium against the
+# built SPA and takes minutes. Run it with `uv run --group docs pytest tests/e2e -m e2e`.
+addopts = "-ra -m 'not e2e'"
+markers = [
+    "perf: timing test against a use-case limit (runs by default; deselect with -m 'not perf')",
+    "e2e: browser acceptance run against the running app (tests/e2e; deselected by default)",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py313"
+extend-exclude = ["frontend"]
+src = ["backend", "tests", "tests/e2e", "tools", "packaging"]
+
+[tool.ruff.lint]
+# D1: every public module, class, method and function has a docstring (SPEC "Doku-Set"). Only the
+# presence rules run; the style rules of pydocstyle (imperative mood, summary line) do not.
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "S", "RUF", "D1"]
+ignore = [
+    # A class docstring documents its constructor and a dunder method has the meaning Python gives it.
+    "D105",
+    "D107",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# assert is the pytest idiom; tests use throwaway temp paths. A test name plus its `Oracle:` docstring
+# says what it checks; fixtures and helpers in test modules need no further prose.
+"tests/**" = ["S101", "S108", "D1"]
+"tools/tests/**" = ["S101", "D1"]

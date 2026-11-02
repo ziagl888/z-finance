@@ -1,0 +1,301 @@
+/*
+ * Base styles: typography, the aurora background, form controls, tables and the focus ring.
+ * Plain elements already look right, so feature CSS only lays things out.
+ */
+@import "@fontsource-variable/montserrat";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--ivory);
+}
+
+/* Aurora: a fixed, blurred, static gold-leaf field behind everything. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20% -10% -10% -10%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      38% 42% at 16% 16%,
+      rgb(196 157 111 / 28%),
+      transparent 70%
+    ),
+    radial-gradient(
+      34% 40% at 84% 10%,
+      rgb(195 186 172 / 34%),
+      transparent 72%
+    ),
+    radial-gradient(42% 48% at 78% 82%, rgb(216 212 197 / 34%), transparent 72%);
+  filter: blur(64px);
+}
+
+@media (prefers-color-scheme: dark) {
+  body::before {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: rgb(196 157 111 / 30%);
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.6em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 0.75em;
+}
+
+a {
+  color: var(--gold-ink);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+code {
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+  background: var(--neutral-bg);
+  font-size: 0.9em;
+}
+
+/* Focus: one visible ring for every interactive element (keyboard flow). */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+/* Form controls */
+input,
+select,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+}
+
+input:not([type="checkbox"], [type="radio"], [type="file"]),
+select,
+textarea {
+  min-height: 2.35rem;
+  padding: 0.4rem 0.7rem;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+input:not([type="checkbox"], [type="radio"], [type="file"]):hover,
+select:hover,
+textarea:hover {
+  border-color: var(--gold-deep);
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  border-color: var(--gold-deep);
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  color: var(--ink-soft);
+  background: var(--neutral-bg);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--ink);
+}
+
+[aria-invalid="true"] {
+  border-color: var(--alert) !important;
+}
+
+[aria-invalid="true"]:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--card),
+    0 0 0 4px var(--alert);
+}
+
+label {
+  color: var(--ink-soft);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* A plain button is a secondary action; ui/Button adds the primary and danger variants. */
+button {
+  min-height: 2.1rem;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+button:hover:not(:disabled) {
+  background: var(--card);
+  border-color: var(--gold-deep);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+/* Tables: dense, hairline rows, numbers right-aligned by their cell class. */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.93rem;
+}
+
+caption {
+  padding-bottom: 0.4rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--hairline);
+}
+
+th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom-color: var(--line);
+}
+
+tfoot td {
+  font-weight: 600;
+  border-top: 1px solid var(--line);
+}
+
+/* Shared utilities */
+.error {
+  color: var(--alert-ink);
+}
+
+.muted {
+  color: var(--ink-soft);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.num {
+  text-align: right !important;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Amounts never break, their column headings may: a long German heading ("Durchschnitt der
+   letzten 6 Monate") would otherwise push a side-by-side table out of its column at 1440 px. */
+thead th.num {
+  white-space: normal;
+}
+
+/* Selectable table row (click or Enter/Space): see ui/selectableRow.ts. */
+.ui-row-selectable {
+  cursor: pointer;
+}
+
+.ui-row-selectable:hover {
+  background: var(--row-hover);
+}
+
+.ui-row-selectable:focus-visible {
+  box-shadow: none;
+  outline: 2px solid var(--gold-deep);
+  outline-offset: -2px;
+}

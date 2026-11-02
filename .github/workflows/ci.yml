@@ -1,0 +1,84 @@
+# The required check for `main` (ADR-0001): the job name `ci` is what branch protection names.
+# It runs the same pre-commit hooks as a local commit, the test suite and the frontend build.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          # Full history: the gitleaks history scan and the pull-request docs gate diff against it.
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@v10.1.0
+        with:
+          python-version: "3.13"
+          enable-cache: true
+
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Cache pre-commit environments
+        uses: actions/cache@v6.1.0
+        with:
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
+
+      - name: pre-commit (all files)
+        run: uvx --python 3.13 pre-commit run --all-files --show-diff-on-failure
+
+      - name: gitleaks (full history)
+        run: uvx --python 3.13 pre-commit run --hook-stage manual gitleaks-history
+
+      # On a pull request the commit-time gates also judge the change as a whole: the title
+      # becomes the squash-merge subject, and the docs gate sees every file the PR changes.
+      - name: Pull request title (conventional commits)
+        if: github.event_name == 'pull_request'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: python3 tools/check_commit_subject.py --text "$PR_TITLE"
+
+      - name: Docs gate (pull request diff)
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: uvx --python 3.13 pre-commit run docs-gate --from-ref "$BASE_SHA" --to-ref HEAD
+
+      - name: Tests
+        run: uv run pytest -q
+
+      - name: Frontend build
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+
+      - name: Frontend tests
+        working-directory: frontend
+        run: npm test
+
+      # --- i18n steps (T-2026-CU-9130-004): add `lingui extract --check` below this line.
+      # Lingui 6 has no `extract --check`; this runs `lingui extract-template` (dependencies are
+      # installed by the build step above) plus the Babel extraction and fails on missing,
+      # obsolete or untranslated catalog entries. The pre-commit hook skipped the frontend side
+      # because it runs before `npm ci`.
+      - name: i18n catalogs (lingui extract check)
+        run: uv run python tools/check_pot_freshness.py

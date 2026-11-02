@@ -1,0 +1,1076 @@
+# z-finance backend messages (API errors).
+# Licensed under the Apache License 2.0.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: z-finance 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/ziagl888/z-finance/issues\n"
+"POT-Creation-Date: 2026-09-20 03:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: z-finance contributors\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: domain/imports/parser.py
+#, python-format
+msgid ""
+"%(errors)s of %(lines)s lines could not be read, more than 10 percent. Check"
+" the import profile."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "A booked receipt cannot be discarded; delete its booking first."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "A category cannot be its own parent."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid "A category named %(name)s already exists here."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "A category with subcategories cannot become a subcategory."
+msgstr ""
+
+#: domain/due/service.py
+msgid ""
+"A confirmed item needs a date of today or earlier; to wait, postpone it."
+msgstr ""
+
+#: domain/payoff/service.py
+msgid "A debt appears twice in the order."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "A fixed amount must be greater than 0."
+msgstr ""
+
+#: domain/forecast/service.py
+msgid "A liability account is not part of the liquidity forecast."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "A percentage must be between 0 and 100 %."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "A planned expense needs a target amount and a target date."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "A pot cannot be on a liability account."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "A pot cannot move to another account."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "A pot movement cannot be dated in the future."
+msgstr ""
+
+#: domain/due/service.py
+msgid ""
+"A receipt is attached to this item, so it was paid: confirm it instead."
+msgstr ""
+
+#: domain/allocation/lines.py
+#, python-format
+msgid "A rule can have at most %(count)s targets."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "A special payment cannot be dated in the future."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "A subcategory must have the same kind as its parent."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "A transfer cannot be the basis of a rule."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "Account not found."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "Add at least one target the income should go to."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Agent run not found."
+msgstr ""
+
+#: domain/allocation/service.py
+msgid "Allocation proposal not found."
+msgstr ""
+
+#: domain/allocation/service.py
+msgid "Allocation rule not found."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid "An account named %(name)s already exists."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "An amount cannot be negative."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid ""
+"An expected item needs a date after today; enter earlier ones as bookings."
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid "An import profile for %(name)s already exists."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "An instalment needs an amount, an interval and a first due date."
+msgstr ""
+
+#: domain/receipts/api.py
+msgid "Attach the receipt photo."
+msgstr ""
+
+#: domain/transactions/service.py
+msgid "Booking not found."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"Bookings before the opening date %(date)s are not possible for the account "
+"%(name)s."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "Category not found."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "Choose a category for the booking first."
+msgstr ""
+
+#: domain/due/service.py
+msgid ""
+"Choose a date after today to postpone an item; a payment that happened is "
+"confirmed."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "Choose a day of the month between 1 and 31."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "Choose a different category as the target."
+msgstr ""
+
+#: domain/forecast/service.py
+msgid "Choose a horizon of 3, 6 or 12 months."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "Choose a weekday."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Choose an active account of the matching area."
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid ""
+"Choose an amount tolerance of 0 to %(pct)s percent and a date tolerance of 0"
+" to %(days)s days."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Choose another account than the pot's account to pay in from."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Choose at least one pot."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Choose monthly, quarterly or yearly."
+msgstr ""
+
+#: domain/debts/service.py domain/pots/service.py
+msgid "Choose private or business."
+msgstr ""
+
+#: domain/payoff/service.py
+msgid "Choose smallest first, most expensive first or your own order."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Choose the account the instalments are paid from."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Choose the account the payment comes from."
+msgstr ""
+
+#: domain/tax/service.py
+msgid "Choose the account the payments are made from."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "Choose the pot the share goes into."
+msgstr ""
+
+#: domain/recurring/service.py domain/transactions/service.py
+msgid "Choose two different accounts for a transfer."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Choose two different pots."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "Could not allocate a new snapshot folder in %(directory)s"
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Debt not found."
+msgstr ""
+
+#: domain/tax/service.py
+msgid "Each due date can be entered only once."
+msgstr ""
+
+#: domain/levy/service.py
+msgid "Enter a levy rate between 0 and 90 %."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Enter a monthly amount greater than 0."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Enter a name for the pot."
+msgstr ""
+
+#: domain/allocation/service.py
+msgid "Enter a name for the rule."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "Enter a name."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "Enter a pattern."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Enter a target amount greater than 0."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "Enter a text for the recurring item."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Enter a threshold between 0 and 1."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Enter a total amount greater than 0."
+msgstr ""
+
+#: domain/recurring/service.py domain/transactions/service.py
+msgid "Enter a transfer amount greater than 0."
+msgstr ""
+
+#: domain/tax/service.py
+msgid "Enter an amount greater than 0 or leave it empty."
+msgstr ""
+
+#: domain/debts/service.py domain/due/service.py domain/pots/service.py
+#: domain/recurring/service.py
+msgid "Enter an amount greater than 0."
+msgstr ""
+
+#: domain/forecast/service.py domain/recurring/service.py
+#: domain/transactions/service.py
+msgid "Enter an amount other than 0."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Enter an instalment greater than 0."
+msgstr ""
+
+#: domain/tax/service.py
+msgid "Enter between 1 and 12 due dates."
+msgstr ""
+
+#: domain/tax/service.py
+msgid "Enter each due date as month and day, e.g. 02-15."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "Enter either a percentage or a fixed amount for every target."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Enter the creditor."
+msgstr ""
+
+#: domain/levy/service.py
+msgid "Enter the due date as month and day, e.g. 07-01."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "Enter the interest rate as a number, e.g. 4.5."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Enter the merchant."
+msgstr ""
+
+#: domain/reports/service.py
+msgid "Enter the month as YYYY-MM."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "Enter the name of the bank."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Enter the receipt total as an amount greater than 0."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "Fill exactly one of the debit and the credit column."
+msgstr ""
+
+#: domain/imports/service.py
+msgid "Import profile not found."
+msgstr ""
+
+#: domain/imports/service.py
+msgid "Import run not found."
+msgstr ""
+
+#: domain/receipts/api.py
+#, python-format
+msgid "Invalid receipt field: %(field)s."
+msgstr ""
+
+#: domain/imports/api.py
+#, python-format
+msgid "Line %(line)s could not be imported, nothing was written: %(reason)s"
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid "Line %(line)s is not an importable line of the preview."
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid "Line %(line)s was imported before and cannot be imported again."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "List every open, unlocked pot of the account exactly once."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "Map either one amount column or both a debit and a credit column."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "Map the date and the text column."
+msgstr ""
+
+#: i18n/errors.py
+msgid "Method Not Allowed"
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Money can only move between pots of the same account."
+msgstr ""
+
+#: domain/levy/service.py
+#, python-format
+msgid "No back-payment is planned for %(year)s."
+msgstr ""
+
+#: domain/backup/api.py
+msgid "No such backup."
+msgstr ""
+
+#: i18n/errors.py
+msgid "Not Found"
+msgstr ""
+
+#: domain/pots/service.py
+#, python-format
+msgid "Only %(amount)s € of the account are free; the pot cannot get more."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "Only a booked booking can replace a planned item."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Only a booked expense can be assigned to a pot."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "Only an expense on the pot's account can be assigned to the pot."
+msgstr ""
+
+#: domain/due/service.py domain/recurring/service.py
+#: domain/transactions/service.py
+msgid "Only planned items can be changed here."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "Planned item not found."
+msgstr ""
+
+#: domain/allocation/service.py domain/levy/service.py domain/pots/service.py
+msgid "Pot not found."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Receipt not found."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Receipt photo not found."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "Recurring item not found."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "Rule not found."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "Send a JPEG, PNG or WebP photo."
+msgstr ""
+
+#: domain/imports/api.py
+msgid "Send the CSV file as the request body, not as a form upload."
+msgstr ""
+
+#: domain/backup/api.py
+msgid ""
+"Send the export as the request body with Content-Type: application/json "
+"(export.json) or application/zip (backup archive)."
+msgstr ""
+
+#: domain/imports/parser.py domain/imports/service.py
+msgid "Skip between 0 and 50 lines before the header."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "Subcategories cannot have subcategories of their own."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"Table %(table)s does not read back as exported (row count or checksum "
+"mismatch)."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "Table %(table)s in the export is malformed."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"Table %(table)s: the checksum does not match its rows (the file was changed "
+"or damaged)."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "Table %(table)s: the row count does not match its rows."
+msgstr ""
+
+#: domain/accounts/service.py domain/debts/service.py
+#: domain/forecast/service.py domain/levy/service.py domain/pots/service.py
+#: domain/recurring/service.py domain/tax/service.py
+#, python-format
+msgid "The account %(name)s is archived."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid "The amount %(value)s is not a valid amount."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid "The amount %(value)s is too large."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "The amount already repaid must be at least 0 and less than the total."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "The amount is 0."
+msgstr ""
+
+#: domain/update_check/service.py
+msgid "The answer from GitHub could not be read."
+msgstr ""
+
+#: domain/update_check/service.py
+msgid "The answer from GitHub was unexpectedly large."
+msgstr ""
+
+#: domain/backup/api.py
+#, python-format
+msgid "The archive could not be written: %(reason)s"
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive entry %(name)s is damaged: %(reason)s"
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive entry %(name)s is encrypted."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive entry %(name)s is not a plain file."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive entry %(name)s points outside the receipts folder."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive entry %(name)s uses an unsupported compression."
+msgstr ""
+
+#: domain/backup/files.py
+msgid "The archive has no export.json."
+msgstr ""
+
+#: domain/backup/files.py
+msgid "The archive has too many entries."
+msgstr ""
+
+#: domain/backup/files.py
+msgid "The archive has too many photos."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive holds an unexpected entry: %(name)s."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid ""
+"The archive holds the photo %(name)s, which no receipt in the export refers "
+"to."
+msgstr ""
+
+#: domain/backup/api.py
+#, python-format
+msgid "The archive is larger than %(limit)s GB."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The archive lists the entry %(name)s twice."
+msgstr ""
+
+#: domain/levy/service.py
+msgid "The back-payment cannot be planned on a liability account."
+msgstr ""
+
+#: domain/levy/service.py
+#, python-format
+msgid "The back-payment for %(year)s is already done."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The backup could not be written to %(target)s: %(reason)s"
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The backup folder %(directory)s cannot be used: %(reason)s"
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The backup folder %(directory)s is not writable: %(reason)s"
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "The booking and the planned item are on different accounts."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "The booking and the planned transfer go in opposite directions."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "The booking has no text to make a rule from."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"The category %(name)s has %(count)s bookings. Choose a category to move them"
+" to."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid "The category %(name)s has subcategories. Move or delete them first."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "The category setup is already complete."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid "The column %(column)s is missing in the file."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid ""
+"The column separator could not be detected. Choose it in the import profile."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The columns of table %(table)s do not match its schema."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"The database already holds data (tables: %(tables)s). A restore only works "
+"into an empty database and never merges; empty the database manually first."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid "The date %(value)s does not match the format %(format)s."
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid ""
+"The date %(value)s is before the opening date %(opening)s of the account."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid ""
+"The date format %(format)s needs day, month and year, e.g. %%d.%%m.%%Y."
+msgstr ""
+
+#: domain/forecast/service.py domain/levy/service.py
+msgid "The date must be today or later."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "The debt cannot be paid from its own account."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid ""
+"The encoding of the file could not be detected. Choose it in the import "
+"profile."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "The end date must not be before the start date."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The export breaks a foreign key in table %(table)s."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The export could not be migrated to the current schema: %(reason)s"
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The export data does not fit the database schema: %(reason)s"
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"The export has schema version %(version)s, but this z-finance supports up to"
+" %(supported)s. Update z-finance and try again."
+msgstr ""
+
+#: domain/backup/service.py
+msgid "The export is missing its migrations or tables."
+msgstr ""
+
+#: domain/backup/service.py
+msgid "The export lists a malformed migration."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"The export was made with a migration this z-finance does not have: %(name)s."
+msgstr ""
+
+#: domain/backup/service.py
+msgid "The export's schema version does not match its migrations."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"The export's tables do not match schema version %(version)s: missing "
+"%(missing)s, unexpected %(unexpected)s."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The export.json in the archive is larger than %(limit)s MB."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "The file contains no lines to import."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid "The file has more than %(max)s lines."
+msgstr ""
+
+#: domain/imports/parser.py
+msgid "The file is empty."
+msgstr ""
+
+#: domain/imports/api.py domain/imports/parser.py
+#, python-format
+msgid "The file is larger than %(max)s MB."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid "The file is not a readable CSV file (line %(line)s)."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The file is not a valid ZIP archive: %(reason)s"
+msgstr ""
+
+#: domain/backup/service.py
+msgid "The file is not a z-finance export."
+msgstr ""
+
+#: domain/imports/parser.py
+#, python-format
+msgid ""
+"The file is not valid %(encoding)s text. Check the encoding in the import "
+"profile."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid "The file is not valid JSON: %(reason)s"
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "The levy share is already reserved and cannot be lowered."
+msgstr ""
+
+#: domain/allocation/service.py
+msgid "The minimum amount cannot be negative."
+msgstr ""
+
+#: domain/payoff/service.py
+msgid "The monthly income cannot be negative."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid "The opening date cannot be later than the first booking on %(date)s."
+msgstr ""
+
+#: domain/payoff/service.py
+msgid "The order names a debt that is not open."
+msgstr ""
+
+#: domain/rules/service.py
+#, python-format
+msgid "The pattern is longer than %(max)s characters."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "The pattern repeats too much. Use smaller repeat counts."
+msgstr ""
+
+#: domain/debts/service.py domain/payoff/service.py
+msgid "The payoff budget cannot be negative."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid ""
+"The photo %(name)s does not match its receipt (the file was changed or "
+"damaged)."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The photo %(name)s is larger than %(limit)s MB."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The photo %(name)s is not an image of the type its name says."
+msgstr ""
+
+#: domain/receipts/api.py domain/receipts/service.py
+#, python-format
+msgid "The photo is larger than %(limit)s MB."
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The photos could not be restored into %(directory)s: %(reason)s"
+msgstr ""
+
+#: domain/backup/files.py
+#, python-format
+msgid "The photos in the archive are larger than %(limit)s GB in total."
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid "The planned item %(id)s does not fit line %(line)s."
+msgstr ""
+
+#: domain/imports/service.py
+#, python-format
+msgid "The planned item %(id)s is matched by more than one line."
+msgstr ""
+
+#: domain/pots/service.py
+#, python-format
+msgid "The pot %(name)s holds only %(amount)s €."
+msgstr ""
+
+#: domain/allocation/service.py domain/levy/service.py domain/pots/service.py
+#, python-format
+msgid "The pot %(name)s is closed."
+msgstr ""
+
+#: domain/pots/service.py
+#, python-format
+msgid "The pot %(name)s is locked and never part of an emergency."
+msgstr ""
+
+#: domain/pots/service.py
+#, python-format
+msgid "The pot %(name)s is locked. Confirm to take money from it."
+msgstr ""
+
+#: domain/pots/service.py
+#, python-format
+msgid "The pot %(name)s is not on this account."
+msgstr ""
+
+#: domain/imports/service.py
+msgid "The preview has expired. Upload the file again."
+msgstr ""
+
+#: domain/rules/service.py
+#, python-format
+msgid "The regular expression is not valid: %(error)s"
+msgstr ""
+
+#: domain/rules/service.py
+msgid ""
+"The regular expression is too slow and could block the app. Simplify it."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid "The reserve floor cannot be negative."
+msgstr ""
+
+#: domain/allocation/lines.py
+#, python-format
+msgid "The shares add up to more than 100 % of the income."
+msgstr ""
+
+#: domain/allocation/lines.py
+msgid "The shares add up to more than the income."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "The total must be more than the amount already repaid."
+msgstr ""
+
+#: domain/update_check/service.py
+msgid "The update check is not configured correctly."
+msgstr ""
+
+#: domain/update_check/service.py
+msgid "The update check is switched off."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"This account belongs to %(count)s debts and cannot be deleted. Archive it "
+"instead."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"This account has %(count)s allocation proposals and cannot be deleted. "
+"Archive it instead."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"This account has %(count)s bookings and cannot be deleted. Archive it "
+"instead."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"This account has %(count)s import runs and cannot be deleted. Archive it "
+"instead."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"This account has %(count)s recurring items and cannot be deleted. Archive it"
+" instead."
+msgstr ""
+
+#: domain/accounts/service.py
+#, python-format
+msgid ""
+"This account has %(count)s savings pots and cannot be deleted. Archive it "
+"instead."
+msgstr ""
+
+#: domain/accounts/api.py
+msgid ""
+"This account is still in use and cannot be deleted. Archive it instead."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid ""
+"This account is the business account of the tax plan and cannot be deleted. "
+"Archive it instead."
+msgstr ""
+
+#: domain/accounts/service.py
+msgid ""
+"This account is used by the levy reserve and cannot be deleted. Archive it "
+"instead."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "This booking already belongs to a transfer or a recurring item."
+msgstr ""
+
+#: domain/debts/service.py
+msgid "This debt is already paid off."
+msgstr ""
+
+#: domain/pots/service.py
+msgid "This expense is already assigned to a pot."
+msgstr ""
+
+#: domain/recurring/service.py
+msgid "This planned item does not belong to a recurring item."
+msgstr ""
+
+#: domain/allocation/service.py
+msgid "This proposal was already decided."
+msgstr ""
+
+#: domain/receipts/service.py
+msgid "This receipt is already booked."
+msgstr ""
+
+#: domain/tax/service.py
+msgid ""
+"This recurring item belongs to the tax plan. Change or clear it under Taxes "
+"& levies."
+msgstr ""
+
+#: domain/rules/service.py
+msgid "This rule already exists."
+msgstr ""
+
+#: domain/transactions/service.py
+msgid "Transfer not found."
+msgstr ""
+
+#: domain/backup/service.py
+#, python-format
+msgid ""
+"Unsupported export format version %(found)s; this z-finance reads version "
+"%(supported)s."
+msgstr ""
+
+#: i18n/api.py
+#, python-format
+msgid "Unsupported language %(language)s. Available: %(supported)s."
+msgstr ""
+
+#: domain/backup/service.py
+msgid "the export contains a damaged binary value"
+msgstr ""
+
+#: domain/backup/service.py
+msgid "the export contains a value that no table column can hold"
+msgstr ""
+
+#: domain/update_check/service.py
+msgid "z-finance could not reach GitHub to look for updates."
+msgstr ""
