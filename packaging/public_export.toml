@@ -19,6 +19,7 @@ include = [
     "tests/",
     # documentation for users and contributors
     "README.md",
+    "README.de.md",
     "ARCHITECTURE.md",
     "CHANGELOG.md",
     "CONTRIBUTING.md",

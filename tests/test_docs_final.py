@@ -24,6 +24,7 @@ DOMAIN = ROOT / "backend" / "zfinance" / "domain"
 
 PROJECT_DOCS = [
     "README.md",
+    "README.de.md",
     "ARCHITECTURE.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
@@ -70,7 +71,49 @@ def test_readme_starts_with_the_lay_installation() -> None:
     assert "early development" not in readme
 
 
-# --- links and hygiene (AK7) -----------------------------------------------------------------------
+LANGUAGE_SWITCH = {
+    "README.md": "English | [Deutsch](README.de.md)",
+    "README.de.md": "[English](README.md) | Deutsch",
+}
+
+
+@pytest.mark.parametrize(("relative", "switch"), LANGUAGE_SWITCH.items())
+def test_each_readme_starts_with_its_language_switch(relative: str, switch: str) -> None:
+    """Oracle: spec-anchored — task HAR-9130-031: each README begins with the switch line to the other
+    language, and the English README has no German paragraph any more."""
+    text = _read(relative)
+    assert text.splitlines()[0] == switch
+    if relative == "README.md":
+        assert "Auf Deutsch" not in text
+
+
+def _shape(markdown: str) -> dict[str, int]:
+    """Counts of the structural parts two translations of one README must share."""
+    return {
+        "sections": len(re.findall(r"^## ", markdown, re.MULTILINE)),
+        "install steps": len(re.findall(r"^[1-9]\. \*\*", markdown, re.MULTILINE)),
+        "list items": len(re.findall(r"^- ", markdown, re.MULTILINE)),
+        "pictures": markdown.count("!["),
+    }
+
+
+def test_the_german_readme_mirrors_the_english_one() -> None:
+    """Oracle: spec-anchored — task HAR-9130-031: README.de.md is the full German version with the same
+    structure, German screenshots, links into the German manual, and one sentence saying that the
+    installer pictures show the English Setup."""
+    english, german = _read("README.md"), _read("README.de.md")
+    assert _shape(german) == _shape(english)
+    assert "screenshots/en/" not in german and "docs/manual/en/" not in german
+    assert "assets/screenshots/de/first-run-account.png" in german
+    assert "Setup auf Englisch" in german
+
+
+def test_the_german_readme_is_exported() -> None:
+    """Oracle: spec-anchored — task HAR-9130-031: the export manifest selects README.de.md."""
+    assert public_export.select(["README.de.md"], _manifest()) == ["README.de.md"]
+
+
+# --- links and hygiene (AK7) ----------------------------------------------------------------------
 
 
 @pytest.mark.parametrize("relative", PUBLIC_DOCS)
@@ -447,11 +490,13 @@ def test_no_file_of_the_public_export_names_the_owner_or_their_finances() -> Non
 def test_no_excluded_file_is_ever_selected() -> None:
     """Oracle: spec-anchored — task HAR-9130-002 "beweist, dass jede Datei der exclude-Liste NICHT im
     Manifest-Ergebnis ist": neither a tracked file an exclude pattern matches nor one of the
-    hand-picked private paths is selected."""
+    hand-picked private paths is selected. Only the private repository tracks private documents, so
+    only there must the manifest exclude something (task HAR-9130-031)."""
     manifest = _manifest()
     tracked = public_export.tracked_files(ROOT)
     excluded = {path for path in tracked if public_export.is_excluded(path, manifest)}
-    assert len(excluded) > 0, "the private documents are tracked, so something must be excluded"
+    if (ROOT / PRIVATE_REPOSITORY_MARKER).exists():
+        assert len(excluded) > 0, "the private documents are tracked, so something must be excluded"
     assert excluded.isdisjoint(public_export.exportable_files(ROOT, manifest))
     assert public_export.select(MUST_STAY_PRIVATE, manifest) == []
 

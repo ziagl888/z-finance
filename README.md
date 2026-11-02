@@ -1,3 +1,5 @@
+English | [Deutsch](README.de.md)
+
 # z-finance
 
 **Know today what money is really free. A local finance and liquidity planner for freelancers and
@@ -14,13 +16,6 @@ Everything runs on your own computer. There is no account and no cloud.
 ![The z-finance dashboard with the free amount, the debt and the next due items, shown with example data](docs/assets/screenshots/en/index.png)
 
 _All screenshots in this repository show example data (marked in the picture), never real figures._
-
-**Auf Deutsch.** z-finance zeigt dir, wie viel Geld wirklich frei ist: nach Steuer- und
-SVS-Rücklage und Reserve. Es plant deinen Kontostand für die nächsten Monate und läuft nur
-auf deinem eigenen PC, ohne Konto und ohne Cloud. Programm und Handbuch gibt es auf Deutsch. Du
-wählst die Sprache beim ersten Start. Das Handbuch beginnt bei
-[`docs/manual/de/index.md`](docs/manual/de/index.md), die Installation steht in
-[`docs/manual/de/install.md`](docs/manual/de/install.md).
 
 **You may not need it** if your income is the same every month. You also may not need it if your
 bank must send the data by itself. z-finance has no bank connection. You type entries, or you
