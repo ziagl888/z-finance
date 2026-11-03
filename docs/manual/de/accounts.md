@@ -2,15 +2,15 @@
 order: 20
 ---
 
-# Konten und Kategorien
+# Konten
 
 ## Was du siehst
 
-Die Seite **Konten** listet deine Konten mit ihrem aktuellen Saldo und verwaltet deine Kategorien.
-Richte beides ein, bevor du die erste Zahlung erfasst: Jede Buchung gehört zu einem Konto und
-einer Kategorie.
+Die Seite **Konten** listet deine Konten mit ihrem aktuellen Saldo. Richte deine Konten und deine
+[Kategorien](categories.md) ein, bevor du die erste Zahlung erfasst: Jede Buchung gehört zu einem
+Konto und einer Kategorie.
 
-![Der Bildschirm „Konten und Kategorien“ mit Beispieldaten](../../assets/screenshots/de/accounts.png)
+![Der Bildschirm „Konten“ mit Beispieldaten](../../assets/screenshots/de/accounts.png)
 
 Du findest diesen Bildschirm in der Seitenleiste unter **Einstellungen**.
 
@@ -54,27 +54,9 @@ noch verwenden. Archiviere ein solches Konto stattdessen.
 
 ## Kategorien
 
-Kategorien beschreiben, wofür Geld geflossen ist. Jede Kategorie hat eine **Art** — **Einnahme**,
-**Ausgabe** oder **Umbuchung** (Geld zwischen deinen eigenen Konten, z. B. von geschäftlich
-nach privat) — und optional einen **Bereich** und eine **übergeordnete Kategorie**. Es gibt eine Ebene
-Unterkategorien: „Auto“ kann „Tanken“ enthalten, „Tanken“ aber nichts mehr. Eine Unterkategorie
-hat dieselbe Art wie ihre übergeordnete Kategorie.
-
-Löschst du eine Kategorie, die schon Buchungen hat, fragt z-finance nach einer anderen Kategorie
-und bucht die Buchungen zuerst dorthin um. Eine Kategorie mit Unterkategorien lässt sich erst
-löschen, wenn ihre Unterkategorien verschoben oder gelöscht sind.
-
-## Die Standard-Kategorien
-
-Beim ersten Öffnen dieser Seite schlägt z-finance Kategorien für privat und geschäftlich vor, in der
-Sprache, die du gewählt hast. Benenne sie um, ändere oder entferne sie und ergänze eigene, dann
-klicke **Kategorien übernehmen** — oder **Überspringen**, um mit einer leeren Liste zu beginnen.
-Der Vorschlag kommt nur einmal und nur, solange du keine Kategorien hast. Die übernommenen
-Kategorien gehören ab dann dir; ein späterer Sprachwechsel benennt sie nicht um.
-
-Willst du eine Datensicherung in ein frisches z-finance zurückspielen, tu das, bevor du die
-Standard-Kategorien übernimmst: Eine Wiederherstellung klappt nur in ein leeres z-finance (siehe
-[Datensicherung](backup.md)).
+Die Kategorien haben jetzt eine eigene Seite: Öffne **Kategorien** in der Seitenleiste unter
+**Einstellungen**. Das Kapitel [Kategorien](categories.md) erklärt sie. Solange du keine
+Kategorien hast, zeigt auch diese Seite das Angebot der Standard-Kategorien. Nachdem du sie übernommen hast, öffnet z-finance die Seite **Kategorien**.
 
 ## Typische Probleme
 

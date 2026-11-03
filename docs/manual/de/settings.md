@@ -25,7 +25,7 @@ Wahl, auch nach einem Neustart und in einem anderen Browser auf demselben Comput
 
 Die Gesamt-Reserve ist der Betrag, der über alle deine Konten zusammen verfügbar bleiben soll —
 ein Sicherheitspolster zusätzlich zur Reserve-Schwelle jedes einzelnen Kontos (siehe
-[Konten und Kategorien](accounts.md)).
+[Konten](accounts.md)).
 
 1. Öffne **Einstellungen** in der Navigation.
 2. Trage unter **Reserven** den Betrag ein, z. B. `3000` oder `3000,00`, und klicke **Speichern**.

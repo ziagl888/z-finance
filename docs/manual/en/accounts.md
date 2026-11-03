@@ -2,15 +2,15 @@
 order: 20
 ---
 
-# Accounts and categories
+# Accounts
 
 ## What you see
 
-The **Accounts** page lists your accounts with their current balance and holds your categories.
-Set both up before you record your first payment: every booking belongs to one account and one
-category.
+The **Accounts** page lists your accounts with their current balance. Set up your accounts and
+your [Categories](categories.md) before you record your first payment: each payment belongs to
+one account and one category.
 
-![The Accounts and categories screen, shown with example data](../../assets/screenshots/en/accounts.png)
+![The Accounts screen, shown with example data](../../assets/screenshots/en/accounts.png)
 
 You find this screen in the sidebar under **Settings**.
 
@@ -54,25 +54,9 @@ account instead.
 
 ## Categories
 
-Categories describe what money was for. Each category has a **kind** — **Income**, **Expense** or
-**Transfer** (money moving between your own accounts, for example from business to private) — and
-optionally an **area** and a **parent category**. There is one level of subcategories: "Car" can
-contain "Fuel", but "Fuel" cannot contain anything. A subcategory has the same kind as its parent.
-
-When you delete a category that already has bookings, z-finance asks for another category and
-moves the bookings there first. A category with subcategories can only be deleted once its
-subcategories are moved or deleted.
-
-## The default categories
-
-The first time you open this page, z-finance suggests a set of categories for private and business
-use in the language you have chosen. Rename, change or remove any of them and add your own, then
-click **Adopt categories** — or **Skip** to start with an empty list. The suggestion appears only
-once, and only while you have no categories. The adopted categories are your own from then on;
-switching the language later does not rename them.
-
-If you want to restore a backup into a fresh z-finance, do it before adopting the default
-categories: a restore only works into an empty z-finance (see [Backup](backup.md)).
+The categories have their own page now: open **Categories** in the sidebar under
+**Settings**. The chapter [Categories](categories.md) explains them. As long as you have no
+categories, this page also shows the offer of the default categories. After you adopt them, z-finance opens the **Categories** page.
 
 ## Typical problems
 

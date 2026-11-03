@@ -78,7 +78,7 @@ msgid "Accounts"
 msgstr "Konten"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/accounts/FirstRunPanel.tsx
 #: src/features/allocation/AllocationPage.tsx src/features/debts/DebtList.tsx
 #: src/features/due/DuePage.tsx src/features/entry/TransactionList.tsx
@@ -155,6 +155,10 @@ msgstr "Alle"
 #: src/features/allocation/RuleForm.tsx src/features/forecast/ForecastPage.tsx
 msgid "All accounts"
 msgstr "Alle Konten"
+
+#: src/features/categories/CategoriesSection.tsx
+msgid "All categories"
+msgstr "Alle Kategorien"
 
 #: src/features/dashboard/SideCards.tsx
 msgid "Allocate"
@@ -254,7 +258,7 @@ msgid "Archived"
 msgstr "Archiviert"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/accounts/FirstRunPanel.tsx src/features/debts/DebtForm.tsx
 #: src/features/debts/DebtList.tsx src/features/first-run/FirstRunWizard.tsx
 #: src/features/month/MonthPage.tsx src/features/pots/PotForm.tsx
@@ -493,7 +497,7 @@ msgstr "Buchung gelöscht"
 msgid "Bookings of the category"
 msgstr "Buchungen der Kategorie"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/accounts/FirstRunPanel.tsx
 #: src/features/first-run/FirstRunWizard.tsx
 msgid "Both areas"
@@ -542,7 +546,7 @@ msgid "CSV file"
 msgstr "CSV-Datei"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/allocation/RuleForm.tsx src/features/debts/DebtForm.tsx
 #: src/features/due/DueRow.tsx src/features/entry/EntryForm.tsx
 #: src/features/pots/EmergencyDialog.tsx src/features/pots/PotDialogs.tsx
@@ -575,10 +579,18 @@ msgstr "Barzahlungen, Business"
 msgid "Cash payments, private"
 msgstr "Barzahlungen, privat"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/first-run/FirstRunWizard.tsx
 msgid "Categories"
 msgstr "Kategorien"
+
+#: src/features/categories/CategoriesPage.tsx
+msgid ""
+"Categories say what money was for. Every booking belongs to one "
+"category."
+msgstr ""
+"Kategorien sagen, wofür Geld geflossen ist. Jede Buchung gehört zu einer "
+"Kategorie."
 
 #: src/features/first-run/FirstRunWizard.tsx
 msgid "Categories to start with"
@@ -710,7 +722,7 @@ msgstr "Wähle das Konto, auf dem der Topf liegt."
 msgid "Choose the account."
 msgstr "Wähle das Konto."
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Choose the category they move to."
 msgstr "Wähle die Kategorie, in die sie umgebucht werden."
 
@@ -726,7 +738,7 @@ msgstr "Wähle die erste Fälligkeit."
 msgid "Choose the pot that gets the money."
 msgstr "Wähle den Topf, der das Geld bekommt."
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/entry/EntryForm.tsx src/features/import/FileStep.tsx
 #: src/features/import/ProfileStep.tsx
 #: src/features/recurring/ExpectedSection.tsx
@@ -846,7 +858,7 @@ msgstr "Konto anlegen"
 msgid "Create an account first: <0>Accounts</0>."
 msgstr "Lege zuerst ein Konto an: <0>Konten</0>."
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Create category"
 msgstr "Kategorie anlegen"
 
@@ -973,7 +985,7 @@ msgid "Decimal separator"
 msgstr "Dezimaltrenner"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/allocation/AllocationPage.tsx src/features/debts/DebtList.tsx
 #: src/features/entry/TransactionList.tsx src/features/month/RulesSection.tsx
 #: src/features/pots/PotCard.tsx src/features/recurring/ExpectedSection.tsx
@@ -989,7 +1001,7 @@ msgstr "Regel {pattern} löschen"
 msgid "Delete the account {name}?"
 msgstr "Das Konto {name} löschen?"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Delete the category {name}?"
 msgstr "Die Kategorie {name} löschen?"
 
@@ -1039,7 +1051,7 @@ msgstr "Diese Umbuchung löschen? Beide Buchungen werden entfernt."
 msgid "Delete {0}"
 msgstr "{0} löschen"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Delete {removingName}"
 msgstr "{removingName} löschen"
 
@@ -1097,7 +1109,7 @@ msgid "Earlier imports"
 msgstr "Frühere Importe"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/allocation/AllocationPage.tsx src/features/debts/DebtList.tsx
 #: src/features/entry/TransactionList.tsx src/features/pots/PotCard.tsx
 #: src/features/recurring/RecurringList.tsx
@@ -1108,7 +1120,7 @@ msgstr "Bearbeiten"
 msgid "Edit account"
 msgstr "Konto bearbeiten"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Edit category"
 msgstr "Kategorie bearbeiten"
 
@@ -1849,7 +1861,7 @@ msgstr ""
 msgid "Key figures"
 msgstr "Kennzahlen"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/accounts/FirstRunPanel.tsx
 #: src/features/first-run/FirstRunWizard.tsx
 #: src/features/recurring/ExpectedSection.tsx
@@ -1989,7 +2001,7 @@ msgstr ""
 "aufzulisten"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/allocation/AllocationPage.tsx
 #: src/features/backup/BackupPage.tsx src/features/dashboard/DashboardPage.tsx
 #: src/features/debts/DebtDetail.tsx src/features/debts/DebtList.tsx
@@ -2141,11 +2153,11 @@ msgstr "Teuerste zuerst"
 msgid "Move"
 msgstr "Verschieben"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Move and delete"
 msgstr "Umbuchen und löschen"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Move bookings to"
 msgstr "Buchungen umbuchen nach"
 
@@ -2182,7 +2194,7 @@ msgid "My own order"
 msgstr "Eigene Reihenfolge"
 
 #: src/features/accounts/AccountsSection.tsx
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 #: src/features/accounts/FirstRunPanel.tsx
 #: src/features/allocation/AllocationPage.tsx
 #: src/features/allocation/RuleForm.tsx
@@ -2211,7 +2223,7 @@ msgstr "Neuer Betrag (€)"
 msgid "New balance"
 msgstr "Neuer Stand"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "New category"
 msgstr "Neue Kategorie"
 
@@ -2292,7 +2304,7 @@ msgstr "Noch keine Buchungen."
 msgid "No bookings yet. Your first one appears here after saving."
 msgstr "Noch keine Buchungen. Deine erste erscheint hier nach dem Speichern."
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "No categories yet."
 msgstr "Noch keine Kategorien."
 
@@ -2420,7 +2432,7 @@ msgstr "Kein Zielbetrag: nur Stand und Verlauf."
 msgid "None"
 msgstr "Keins"
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "None (top level)"
 msgstr "Keine (oberste Ebene)"
 
@@ -2612,7 +2624,7 @@ msgstr "Abbezahlt am"
 msgid "Paid off."
 msgstr "Abbezahlt."
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid "Parent category"
 msgstr "Übergeordnete Kategorie"
 
@@ -3580,6 +3592,13 @@ msgstr "Der Export wurde von Schemaversion {from} auf {to} migriert."
 msgid "The highest-ranked pot of the account"
 msgstr "Der Topf mit dem höchsten Rang des Kontos"
 
+#: src/features/accounts/AccountsPage.tsx
+msgid ""
+"The income and expense categories have their own page: <0>Categories</0>."
+msgstr ""
+"Die Einnahmen- und Ausgabenkategorien haben eine eigene Seite: "
+"<0>Kategorien</0>."
+
 #: src/features/first-run/FirstRunWizard.tsx
 msgid "The interface, the help and the manual follow this choice."
 msgstr "Oberfläche, Hilfe und Handbuch folgen dieser Wahl."
@@ -4362,7 +4381,7 @@ msgstr "{balance} von {targetText}"
 msgid "{booked} booked."
 msgstr "{booked} gebucht."
 
-#: src/features/accounts/CategoriesSection.tsx
+#: src/features/categories/CategoriesSection.tsx
 msgid ""
 "{bookingCount, plural, one {This category has # booking.} other {This "
 "category has # bookings.}}"

@@ -9,6 +9,10 @@ matching subsection (`Added`, `Changed`, `Fixed`, `Removed`) and never rewrites 
 
 ## Unreleased
 
+### Added
+
+- The expense and income categories have their own menu item, **Categories**, under Settings directly after Accounts. The Accounts page links to it instead of listing the categories a second time. The manual has a new chapter Categories (English and German) with a picture, and the Accounts chapter points to it (T-2026-HAR-9130-032)
+
 ### Changed
 
 - The install chapter of the manual (English and German) shows the pictures of the installer from the Windows Sandbox run: the pages of Setup, the tray menu, Setup asking to close z-finance before an update, and the uninstaller; the picture test no longer exempts the chapter (T-2026-HAR-9130-025)

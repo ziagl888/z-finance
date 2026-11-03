@@ -9,13 +9,13 @@ in detail.
 
 **Account.** A place where money is: a current account, a savings account, cash, a card — or a
 debt, which z-finance keeps as an account with a negative balance. Every account is private or
-business. [Accounts and categories](accounts.md)
+business. [Accounts](accounts.md)
 
 **Allocation.** The split of an income into shares — the levy, a debt, pots — according to your
 rules. z-finance proposes it and books it only when you confirm. [Allocation](allocation.md)
 
 **Area.** _Private_ or _business_. Every account belongs to one; the reports and the levy work
-per area. [Accounts and categories](accounts.md)
+per area. [Accounts](accounts.md)
 
 **Assessment notice.** The tax office's decision on a year's income tax. It fixes the
 prepayments of the following year and the back-payment of the year just ended.
@@ -31,7 +31,7 @@ minus the prepayments. z-finance plans it as an expected item. [Levy & revenue](
 _planned_ and _skipped_. [Quick entry](entry.md)
 
 **Category.** What a booking was for: groceries, rent, fees. Income, expense or transfer.
-[Accounts and categories](accounts.md)
+[Categories](categories.md)
 
 **Confirm.** Turn a planned item into a real booking, possibly with another amount or date.
 [Due items](due.md)
@@ -100,7 +100,7 @@ once; z-finance plans the next twelve months. [Recurring items](recurring.md)
 
 **Reserve.** The amount that should always stay on an account (reserve floor) or across all
 accounts (total reserve). The forecast warns when the balance falls below it.
-[Accounts and categories](accounts.md)
+[Accounts](accounts.md)
 
 **Rule.** A category assignment for bookings whose text contains a word or matches a pattern, so
 you assign it once. [Month](month.md)

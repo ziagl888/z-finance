@@ -1,14 +1,10 @@
 import { Trans } from "@lingui/react/macro";
 import { useCallback, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router";
 
-import {
-  listAccounts,
-  listCategories,
-  type Account,
-  type Category,
-} from "./accountsApi";
+import { Card } from "../../ui";
+import { listAccounts, type Account } from "./accountsApi";
 import { AccountsSection } from "./AccountsSection";
-import { CategoriesSection } from "./CategoriesSection";
 import { FirstRunPanel } from "./FirstRunPanel";
 import "./accounts.css";
 
@@ -17,15 +13,20 @@ function message(error: unknown): string {
 }
 
 /**
- * Accounts and categories (UC-ZF-001): the first-run offer of the default category set, the
- * account list with balances, and the category tree. Server messages (already in the UI language)
- * are shown in one alert line.
+ * Accounts (UC-ZF-001): the first-run offer of the default category set (kept here, where earlier
+ * versions offered it) and the account list with balances. The categories have their own page;
+ * a hint links to it. Server messages (already in the UI language) are shown in one alert line.
  */
 export function AccountsPage() {
   const [accounts, setAccounts] = useState<Account[] | null>(null);
-  const [categories, setCategories] = useState<Category[] | null>(null);
   const [showArchived, setShowArchived] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const navigate = useNavigate();
+
+  // The adopted default set is listed on the Categories page, so go there after the adoption.
+  const showCategories = useCallback(async () => {
+    await navigate("/categories");
+  }, [navigate]);
 
   const reportError = useCallback(
     (reason: unknown) => setError(message(reason)),
@@ -35,10 +36,6 @@ export function AccountsPage() {
   const refreshAccounts = useCallback(async () => {
     setAccounts(await listAccounts(showArchived));
   }, [showArchived]);
-
-  const refreshCategories = useCallback(async () => {
-    setCategories(await listCategories());
-  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -50,30 +47,20 @@ export function AccountsPage() {
     };
   }, [showArchived]);
 
-  useEffect(() => {
-    let cancelled = false;
-    listCategories()
-      .then((loaded) => !cancelled && setCategories(loaded))
-      .catch((reason: unknown) => !cancelled && setError(message(reason)));
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
   /** Run a change, then reload; any failure lands in the alert line. */
   const run = useCallback(
-    async (change: () => Promise<unknown>, reload: () => Promise<void>) => {
+    async (change: () => Promise<unknown>) => {
       setError(null);
       try {
         await change();
-        await reload();
+        await refreshAccounts();
         return true;
       } catch (reason) {
         reportError(reason);
         return false;
       }
     },
-    [reportError],
+    [refreshAccounts, reportError],
   );
 
   return (
@@ -86,16 +73,20 @@ export function AccountsPage() {
           {error}
         </p>
       )}
-      <FirstRunPanel onDone={refreshCategories} onError={reportError} />
+      <FirstRunPanel onDone={showCategories} onError={reportError} />
+      <Card>
+        <p>
+          <Trans>
+            The income and expense categories have their own page:{" "}
+            <Link to="/categories">Categories</Link>.
+          </Trans>
+        </p>
+      </Card>
       <AccountsSection
         accounts={accounts}
         showArchived={showArchived}
         onShowArchived={setShowArchived}
-        run={(change) => run(change, refreshAccounts)}
-      />
-      <CategoriesSection
-        categories={categories}
-        run={(change) => run(change, refreshCategories)}
+        run={run}
       />
     </section>
   );

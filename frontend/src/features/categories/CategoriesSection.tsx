@@ -15,8 +15,8 @@ import {
   type CategoryInput,
   type CategoryKind,
   type RunChange,
-} from "./accountsApi";
-import { AREA_LABELS, CATEGORY_KIND_LABELS } from "./labels";
+} from "../accounts/accountsApi";
+import { AREA_LABELS, CATEGORY_KIND_LABELS } from "../accounts/labels";
 
 const emptyDraft = (): CategoryInput => ({
   name: "",
@@ -108,7 +108,7 @@ export function CategoriesSection({ categories, run }: Props) {
   return (
     <Card>
       <h2>
-        <Trans>Categories</Trans>
+        <Trans>All categories</Trans>
       </h2>
       {categories === null ? (
         <p>

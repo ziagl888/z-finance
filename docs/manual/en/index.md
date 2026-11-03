@@ -73,7 +73,7 @@ The sidebar on the left lists the screens in four groups:
 - **Planning** — what is coming: recurring items, savings pots, debts, payoff plan, allocation,
   taxes and levies.
 - **Analyse** — look back and ahead: forecast and the month overview.
-- **Settings** — accounts and categories, the language of the interface, backups and this manual.
+- **Settings** — accounts, categories, the language of the interface, backups and this manual.
 
 The line at the top shows where you are. Next to it you switch the language (the same setting as on
 the Settings screen). At the foot of the sidebar z-finance shows whether it is running and its
