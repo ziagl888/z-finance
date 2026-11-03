@@ -22,7 +22,7 @@ previous one at any time. You can change every one of these answers later.
    has today together with the date that balance is from. Everything you book later is added to
    that starting point, so it does not have to be the day you opened the account: today is fine.
    More accounts, and the reserve you want to keep on each, are on
-   [Accounts and categories](accounts.md). If an account with that name exists, the assistant uses
+   [Accounts](accounts.md). If an account with that name exists, the assistant uses
    it. This includes archived accounts and names in a different case.
 
    ![Step 2: the first account](../../assets/screenshots/en/first-run-account.png)
@@ -30,7 +30,7 @@ previous one at any time. You can change every one of these answers later.
 3. **Categories to start with.** z-finance suggests a set for private and business use in the
    language you chose. Rename what you call differently, remove what you do not need, and keep the
    rest. This is only a starting point — you add, rename and delete categories later on
-   [Accounts and categories](accounts.md).
+   [Categories](categories.md).
 
    ![Step 3: the categories](../../assets/screenshots/en/first-run-categories.png)
 

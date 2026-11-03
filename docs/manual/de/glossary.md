@@ -19,7 +19,7 @@ Vorauszahlungen. Sie wird von der freien Zahl abgezogen. [Abgaben & Umsatz](levy
 30 %. [Abgaben & Umsatz](levy.md)
 
 **Bereich.** _Privat_ oder _Business_. Jedes Konto gehört zu einem; die Auswertungen und die
-Abgaben rechnen je Bereich. [Konten und Kategorien](accounts.md)
+Abgaben rechnen je Bereich. [Konten](accounts.md)
 
 **Bescheid.** Die Entscheidung des Finanzamts über die Einkommensteuer eines Jahres. Sie legt die
 Vorauszahlungen des Folgejahres und die Nachzahlung des gerade beendeten Jahres fest.
@@ -58,11 +58,11 @@ Dauerbuchung und erwartete Posten. Er ändert keinen Saldo, bis er bestätigt is
 [Dauerbuchungen](recurring.md)
 
 **Kategorie.** Wofür eine Buchung war: Lebensmittel, Miete, Honorar. Einnahme, Ausgabe oder
-Umbuchung. [Konten und Kategorien](accounts.md)
+Umbuchung. [Kategorien](categories.md)
 
 **Konto.** Ein Ort, an dem Geld liegt: ein Girokonto, ein Sparkonto, Bargeld, eine Karte — oder eine
 Schuld, die z-finance als Konto mit negativem Saldo führt. Jedes Konto ist privat oder Business.
-[Konten und Kategorien](accounts.md)
+[Konten](accounts.md)
 
 **Nachzahlung.** Was du dem Finanzamt nach dem Bescheid des Jahres schuldest: das Abgaben-Soll des
 Jahres minus die Vorauszahlungen. z-finance plant sie als erwarteten Posten.
@@ -82,7 +82,7 @@ passt, damit du sie nur einmal vergibst. [Monat](month.md)
 
 **Reserve.** Der Betrag, der auf einem Konto (Reserve-Schwelle) oder über alle Konten zusammen
 (Gesamt-Reserve) immer bleiben soll. Die Vorschau warnt, wenn der Saldo darunter fällt.
-[Konten und Kategorien](accounts.md)
+[Konten](accounts.md)
 
 **Schuld.** Geld, das du schuldest. z-finance führt sie als Konto mit negativem Saldo und, bei
 fester Rate, als Dauer-Umbuchung, die sie abbaut. [Schulden](debts.md)

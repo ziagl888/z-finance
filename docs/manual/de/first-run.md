@@ -22,7 +22,7 @@ dich jederzeit einen Schritt zurück. Jede dieser Antworten kannst du später ä
    den Saldo ein, den es heute hat, samt dem Datum, auf das sich dieser Saldo bezieht. Alles, was du
    später buchst, wird auf diesen Startpunkt aufgeschlagen — es muss also nicht der Eröffnungstag
    des Kontos sein, heute genügt. Weitere Konten und die Reserve, die auf jedem liegen bleiben soll,
-   stehen unter [Konten und Kategorien](accounts.md). Gibt es schon ein Konto mit diesem Namen,
+   stehen unter [Konten](accounts.md). Gibt es schon ein Konto mit diesem Namen,
    verwendet der Assistent dieses Konto. Das gilt auch für archivierte Konten und für eine andere
    Schreibweise des Namens.
 
@@ -31,7 +31,7 @@ dich jederzeit einen Schritt zurück. Jede dieser Antworten kannst du später ä
 3. **Kategorien für den Anfang.** z-finance schlägt einen Satz für privat und geschäftlich in der
    gewählten Sprache vor. Benenne um, was du anders nennst, entferne was du nicht brauchst, und
    behalte den Rest. Das ist nur ein Startpunkt — Kategorien ergänzt, benennst und löschst du
-   später unter [Konten und Kategorien](accounts.md).
+   später unter [Kategorien](categories.md).
 
    ![Schritt 3: die Kategorien](../../assets/screenshots/de/first-run-categories.png)
 

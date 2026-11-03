@@ -89,7 +89,7 @@ def test_ak3_the_default_categories_are_offered_and_editable_before_adoption(
     page.get_by_role("button", name="Continue").click()
     page.get_by_role("button", name="Finish").click()
     page.wait_for_url(f"{fresh.base}/")
-    fresh.open(page, "/accounts")
+    fresh.open(page, "/categories")
 
     text = body(page)
     assert "Living costs" in text
@@ -103,7 +103,7 @@ def test_ak4_a_category_with_bookings_is_removed_only_onto_a_target(app: Any, pa
     leisure = ready["categories"]["Leisure"]
     scenario.book(app, day=date.today(), cents=-3_000, account_id=account, category_id=leisure, text="AK4 booking")
 
-    app.open(page, "/accounts")
+    app.open(page, "/categories")
     row(page, "Leisure").get_by_role("button", name="Delete").click()
 
     assert shown(page, "This category has 1 booking")

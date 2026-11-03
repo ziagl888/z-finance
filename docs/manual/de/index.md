@@ -76,7 +76,7 @@ Die Seitenleiste links listet die Bildschirme in vier Gruppen:
 - **Planen** — was ansteht: Dauerbuchungen, Spartöpfe, Schulden, Tilgungsplan, Zuteilung, Steuern
   und Abgaben.
 - **Auswerten** — zurück- und vorausschauen: Vorschau und Monatsübersicht.
-- **Einstellungen** — Konten und Kategorien, die Sprache der Oberfläche, Datensicherung und dieses
+- **Einstellungen** — Konten, Kategorien, die Sprache der Oberfläche, Datensicherung und dieses
   Handbuch.
 
 Die Zeile oben zeigt, wo du gerade bist. Daneben wechselst du die Sprache (dieselbe Einstellung wie

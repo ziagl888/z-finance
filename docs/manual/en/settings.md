@@ -25,7 +25,7 @@ choice, also after a restart and in another browser on the same computer.
 
 The total reserve is the amount that should stay available across all your accounts together — a
 safety cushion on top of the reserve floor of each single account (see
-[Accounts and categories](accounts.md)).
+[Accounts](accounts.md)).
 
 1. Open **Settings** in the navigation.
 2. Enter the amount under **Reserve**, for example `3000` or `3000,00`, and click **Save**.
