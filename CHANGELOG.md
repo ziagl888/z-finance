@@ -9,6 +9,8 @@ matching subsection (`Added`, `Changed`, `Fixed`, `Removed`) and never rewrites 
 
 ## Unreleased
 
+## 1.1.0 - 2026-11-04
+
 ### Added
 
 - The expense and income categories have their own menu item, **Categories**, under Settings directly after Accounts. The Accounts page links to it instead of listing the categories a second time. The manual has a new chapter Categories (English and German) with a picture, and the Accounts chapter points to it (T-2026-HAR-9130-032)
@@ -20,6 +22,7 @@ matching subsection (`Added`, `Changed`, `Fixed`, `Removed`) and never rewrites 
 - The public export names no employer, customer or third-party product of the maintainer any more: ADR-0001 describes the protection of a public repository (status check `ci`, review by the maintainer); the project's own `.po`/`.pot` check `tools/check_po.py` (standard library, it only reads) replaces the third-party hook; the privacy test has patterns for these names; the new page `docs/install-test.md` shows the clean-machine install results; a test checks that each relative link of an exported Markdown file stays inside the export (T-2026-HAR-9130-028)
 - The export guard `tests/test_docs_final.py` keeps only generic privacy patterns. The patterns that identify the maintainer, the employer, a customer, the ERP product and the maintainer's machines are now in `docs/qa/private_patterns.toml`. The export excludes this file and a test keeps it out. In the private repository the test fails when this file is not there (T-2026-HAR-9130-030)
 - The README is English only and starts with a language switch; the new `README.de.md` is the full German version with German screenshots and links to the German manual, and the export includes it. `test_no_excluded_file_is_ever_selected` demands an excluded file only in the private repository, so the exported repository passes its own tests (T-2026-HAR-9130-031)
+- Version 1.1.0: the README status line (English and German) names this release (T-2026-HAR-9130-033)
 
 ## 1.0.0 - 2026-11-02
 

@@ -118,8 +118,8 @@ Fang mit dem Wochenritual an: zehn Minuten, immer in derselben Reihenfolge.
 
 ## Stand
 
-Version 1.0.0, veröffentlicht am 2026-11-02, für Windows 11 x64. Wir testeten den Installer auf einem
-frischen Windows. Das Testprotokoll nennt auch die Schritte, die noch einen echten Computer
+Version 1.1.0, veröffentlicht am 2026-11-04, für Windows 11 x64. Wir testeten den Installer von 1.0.0
+auf einem frischen Windows. Das Testprotokoll nennt auch die Schritte, die noch einen echten Computer
 brauchen: [`docs/install-test.md`](docs/install-test.md). Die Änderungen stehen in
 [CHANGELOG.md](CHANGELOG.md).
 

@@ -113,8 +113,8 @@ Start with the weekly routine: ten minutes, always in the same order.
 
 ## Status
 
-Version 1.0.0, released on 2026-11-02, for Windows 11 x64. We tested the installer on a clean
-Windows machine. The test protocol also names the steps that still need a real machine:
+Version 1.1.0, released on 2026-11-04, for Windows 11 x64. We tested the installer of 1.0.0 on a
+clean Windows machine. The test protocol also names the steps that still need a real machine:
 [`docs/install-test.md`](docs/install-test.md). What changed:
 [CHANGELOG.md](CHANGELOG.md).
 
