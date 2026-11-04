@@ -1,6 +1,6 @@
 [project]
 name = "z-finance"
-version = "1.0.0"
+version = "1.1.0"
 description = "Local personal finance and liquidity tool: quick entry, recurring items, CSV import, cash-flow forecast."
 readme = "README.md"
 license = "Apache-2.0"
